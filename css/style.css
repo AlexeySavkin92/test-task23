@@ -402,7 +402,7 @@ template {
           justify-content: space-between;
 }
 
-.header__container img {
+.header__container .logo {
   position: relative;
   top: 32px;
   width: 78px;
@@ -411,6 +411,12 @@ template {
 
 .header__menu {
   margin-top: 80px;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: ProximaNova;
+  font-weight: 700;
+  line-height: 18px;
+  word-wrap: break-word;
 }
 
 .header__menu-list {
@@ -423,7 +429,25 @@ template {
 }
 
 .header__menu-list li {
-  padding-left: 28px;
+  margin-left: 28px;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__menu-list li::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: -4px;
+  width: 0;
+  height: 3px;
+  background-color: #ff8b00;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.header__menu-list li:hover::after {
+  width: calc(100% + 8px);
 }
 
 .main__section {
