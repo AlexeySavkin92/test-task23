@@ -458,6 +458,7 @@ template {
 
 .main {
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .main__section {
@@ -529,6 +530,7 @@ template {
 }
 
 .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-button {
+  cursor: pointer;
   margin-top: 44px;
   font-size: 14px;
   font-weight: 700;
@@ -540,8 +542,7 @@ template {
 }
 
 .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-button:hover {
-  background-color: #cc6f00;
-  color: rgb(61, 47, 47);
+  background-color: #f08300;
 }
 
 .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-button:active {
