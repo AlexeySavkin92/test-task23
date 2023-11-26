@@ -41,12 +41,17 @@ main {
 
 h1,
 h2,
-h2,
+h3,
 p,
 span,
 ul,
 li {
   margin: 0;
+}
+
+button {
+  border: none;
+  outline: none;
 }
 
 /* Grouping content
@@ -451,13 +456,157 @@ template {
 }
 
 .main__section {
-  padding-top: 261px;
+  padding-top: 228px;
   background-image: url("../img/Bg-header.svg");
   background-size: cover;
   background-position: center;
-  height: 549px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  color: #ffffff;
+  font-family: ProximaNova;
+  word-wrap: break-word;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__section-top {
+  width: 100%;
+  position: relative;
+}
+
+.main__section-top .swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.main__section-top .swiper-container .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0px;
+}
+
+.main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block {
+  max-width: 552px;
+  margin-left: 306px;
+  padding-right: 25px;
+}
+
+.main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-title {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+.main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-description {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 12px;
+}
+
+.main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-button {
+  margin-top: 44px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 45px;
+  background-color: #ff8b00;
+  padding: 4px 42px;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-button:hover {
+  background-color: #cc6f00;
+  color: rgb(61, 47, 47);
+}
+
+.main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-button:active {
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-image-block {
+  margin-right: 371px;
+}
+
+.main__section-top-slider-buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 50%;
+  right: 54px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main__section-top-slider-buttons .slide-button {
+  cursor: pointer;
+  margin-top: 12px;
+  position: relative;
+  width: 19px;
+  height: 22px;
+  background: url("../img/hex.svg") 0 0 no-repeat;
+}
+
+.main__section-top-slider-buttons .slide-button:hover {
+  background-image: url("../img/hex-hover.svg");
+}
+
+.main__section-top-slider-buttons .slide-button.active {
+  background-image: url("../img/hex-active.svg");
+}
+
+.main__section-bottom {
+  margin-top: 102px;
+}
+
+.main__section-bottom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__section-bottom-container .main__section-bottom-title {
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.main__section-bottom-container .main__section-scroll-image {
+  cursor: pointer;
+  padding-top: 29px;
+  padding-bottom: 50px;
+  width: 62px;
 }
 
 @font-face {
@@ -482,4 +631,8 @@ template {
   src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
+}
+
+body {
+  height: 3000px;
 }
