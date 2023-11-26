@@ -1,4 +1,5 @@
 import webpack from "webpack-stream";
+import babel from "gulp-babel";
 
 export const js = () => {
 	return app.gulp
@@ -17,6 +18,11 @@ export const js = () => {
 				output: {
 					filename: "app.min.js",
 				},
+			})
+		)
+		.pipe(
+			babel({
+				presets: ["@babel/env"],
 			})
 		)
 		.pipe(app.gulp.dest(app.path.build.js))

@@ -13,10 +13,12 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"@babel/preset-env": "^7.23.3",
 		"browser-sync": "^2.29.3",
 		"del": "^7.1.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^9.0.0",
+		"gulp-babel": "^8.0.0",
 		"gulp-clean-css": "^4.3.0",
 		"gulp-file-include": "^2.3.0",
 		"gulp-fonter": "^0.3.0",
@@ -40,6 +42,7 @@
 		"normalize-scss": "^8.0.0",
 		"normalize.css": "^8.0.1",
 		"sass": "^1.69.5",
+		"swiper": "^11.0.5",
 		"webp-converter": "^2.2.3",
 		"webpack": "^5.89.0",
 		"webpack-stream": "^7.0.0"
