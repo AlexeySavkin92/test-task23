@@ -1,4 +1,6 @@
 .main {
+	max-width: 1600px;
+	margin: 0 auto;
 	&__section {
 		padding-top: 228px;
 		background-image: url("@img/Bg-header.svg");
@@ -13,22 +15,26 @@
 
 		&-top {
 			width: 100%;
+
 			position: relative;
 
 			.swiper-container {
+				overflow: hidden;
+
 				.swiper-wrapper {
 					width: 100%;
 					height: 320px;
-					overflow: hidden;
+
 					padding-bottom: 10px;
 					.swiper-slide {
+						max-width: 988px;
 						display: flex;
+						margin: 0 auto;
 						justify-content: space-between;
 						align-items: center;
 						margin-bottom: 0px;
 						& > .main__section-top-start-block {
 							max-width: 552px;
-							margin-left: 306px;
 							padding-right: 25px;
 
 							& .main__section-title {
@@ -43,6 +49,7 @@
 								margin-top: 12px;
 							}
 							& .main__section-button {
+								cursor: pointer;
 								margin-top: 44px;
 								font-size: 14px;
 								font-weight: 700;
@@ -52,8 +59,7 @@
 								color: $primary;
 								border-radius: 4px;
 								&:hover {
-									background-color: darken($accent, 10%);
-									color: $hover-text;
+									background-color: darken($accent, 3%);
 								}
 								&:active {
 									transform: translateY(1px);
@@ -61,7 +67,7 @@
 							}
 						}
 						& > .main__section-top-image-block {
-							margin-right: 371px;
+							margin-right: 65px;
 							& .main__section-image {
 							}
 						}

@@ -4,6 +4,7 @@ const swiper = new Swiper(".swiper-container", {
 	direction: "vertical",
 	loop: false,
 	slidesPerView: 1,
+	allowTouchMove: false,
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
