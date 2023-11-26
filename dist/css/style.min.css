@@ -474,6 +474,39 @@ template {
   width: 62px;
 }
 
+.statisticsSection__container {
+  padding: 133px 0 131px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 899px;
+  margin: 0 auto;
+  font-family: ProximaNova;
+  font-weight: 700;
+  word-wrap: break-word;
+  color: #7050e5;
+}
+.statisticsSection__container-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.statisticsSection__container-item:not(:last-child) {
+  margin-right: 94px;
+}
+.statisticsSection__value {
+  font-size: 60px;
+  line-height: 68px;
+}
+.statisticsSection__description {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-wrap: nowrap;
+}
+
 @font-face {
   font-family: ProximaNova;
   font-display: swap;

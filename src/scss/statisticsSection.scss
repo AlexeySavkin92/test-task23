@@ -1,0 +1,35 @@
+.statisticsSection {
+	&__container {
+		padding: 133px 0 131px;
+		display: flex;
+		justify-content: space-between;
+		max-width: 899px;
+		margin: 0 auto;
+		font-family: ProximaNova;
+		font-weight: 700;
+		word-wrap: break-word;
+		color: $secondary;
+
+		&-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			&:not(:last-child) {
+				margin-right: 94px;
+			}
+		}
+	}
+	&__value {
+		font-size: 60px;
+		line-height: 68px;
+	}
+	&__description {
+		margin-top: 14px;
+		font-size: 16px;
+		line-height: 18px;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: -0.02em;
+		text-wrap: nowrap;
+	}
+}
