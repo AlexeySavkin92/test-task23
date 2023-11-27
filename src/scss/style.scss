@@ -3,8 +3,11 @@
 @import "header.scss";
 @import "mainSection.scss";
 @import "statisticsSection.scss";
+@import "descriptionsSection.scss";
 @import "fonts";
 
 body {
+	max-width: 1600px;
+	margin: 0 auto;
 	height: 3000px;
 }
