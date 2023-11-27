@@ -5,7 +5,32 @@ flsFunctions.isWebp();
 
 document.getElementById("scroll-image").addEventListener("click", function () {
 	window.scrollTo({
-		top: document.body.scrollHeight,
+		top: window.innerHeight,
 		behavior: "smooth",
+	});
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+	const customButton = document.querySelector(".videoSection__custom-button");
+	const videoPopup = document.querySelector(".videoSection__video-popup");
+	const iframe = document.querySelector(".videoSection__iframe");
+	const iframePopup = document.querySelector(".video-popup__iframe");
+
+	customButton.addEventListener("click", function () {
+		// Открыть попап с видео
+		videoPopup.style.display = "block";
+		// Задать src для видео, чтобы начать воспроизведение
+		iframePopup.src =
+			"https://www.youtube.com/embed/__-vp0g_BhA?si=wr9g0o6PIxE_bUTf&amp;controls=0&autoplay=1";
+		// iframe.src =
+		// 	"https://www.youtube.com/embed/__-vp0g_BhA?si=WRDJbBR8YQqSaxan&autoplay=1";
+	});
+
+	// Закрыть попап с видео
+	videoPopup.addEventListener("click", function () {
+		videoPopup.style.display = "none";
+		// Остановить видео и сбросить src
+		iframePopup.src = "";
+		//iframe.src = "";
 	});
 });

@@ -4,10 +4,12 @@
 @import "mainSection.scss";
 @import "statisticsSection.scss";
 @import "descriptionsSection.scss";
+@import "videoSection.scss";
 @import "fonts";
 
 body {
 	max-width: 1600px;
 	margin: 0 auto;
-	height: 3000px;
+	height: 4000px;
+	position: relative;
 }
