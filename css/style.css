@@ -457,7 +457,6 @@ template {
 }
 
 .main {
-  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -667,6 +666,90 @@ template {
   text-wrap: nowrap;
 }
 
+.descriptionsSection {
+  background-color: #f8f8f8;
+}
+
+.descriptionsSection__wrapper {
+  max-width: 1000px;
+  font-family: ProximaNova;
+  color: #7050e5;
+  margin: 0 auto;
+  padding-top: 145px;
+  padding-bottom: 120px;
+  padding-right: 6px;
+}
+
+.descriptionsSection__title-block {
+  text-align: right;
+  padding-right: 60px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.descriptionsSection__title-block .descriptionsSection__title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.descriptionsSection__title-block .descriptionsSection__image-decor {
+  position: absolute;
+  top: -20px;
+  right: -6px;
+}
+
+.descriptionsSection__grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 100px;
+}
+
+.descriptionsSection__grid-container .descriptionsSection__grid-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 150px auto 1fr;
+  grid-template-rows: 150px auto 1fr;
+}
+
+.descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(3) {
+  min-width: 288px;
+}
+
+.descriptionsSection__grid-container .descriptionsSection__grid-item-image {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.descriptionsSection__grid-container .descriptionsSection__grid-item-subtitle {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-top: 28px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.descriptionsSection__grid-container .descriptionsSection__grid-item-text {
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  margin-top: 8px;
+  color: #878787;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  word-wrap: break-word;
+}
+
 @font-face {
   font-family: ProximaNova;
   font-display: swap;
@@ -692,5 +775,7 @@ template {
 }
 
 body {
+  max-width: 1600px;
+  margin: 0 auto;
   height: 3000px;
 }
