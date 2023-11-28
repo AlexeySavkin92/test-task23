@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -766,7 +768,8 @@ template {
           align-items: center;
   max-width: 1326px;
   margin: 0 auto;
-  margin-top: 114px;
+  padding-top: 114px;
+  padding-bottom: 97px;
 }
 
 .videoSection__info-block {
@@ -886,6 +889,92 @@ template {
 .videoSection .video-popup__iframe {
   width: 800px;
   height: 450px;
+}
+
+.formSection {
+  background-color: #232323;
+}
+
+.formSection__wrapper {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1262px;
+  padding-top: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: ProximaNova;
+  word-wrap: break-word;
+}
+
+.formSection__left-block-title {
+  padding-left: 31px;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+.formSection__form-block {
+  min-width: 640px;
+}
+
+.formSection__form-block-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 41px;
+}
+
+.formSection__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* регулировка ширины колонок */
+  gap: 20px;
+  /* промежуток между элементами */
+}
+
+.formSection__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.formSection__input-group_half {
+  width: 100%;
+  /* Ширина 100% для инпутов половины колонки */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+.formSection__input-group input[type=text],
+.formSection__input-group input[type=email] {
+  border-radius: 8px;
+  border: 1px #292929 solid;
+  height: 40px;
+}
+
+.formSection__input-group textarea {
+  border-radius: 8px;
+  border: 1px #292929 solid;
 }
 
 @font-face {

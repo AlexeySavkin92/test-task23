@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20231127233215" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231128150227" />
 	<link
 		rel="icon"
 		type="image/png"
@@ -272,7 +272,6 @@
 			<div class="videoSection__custom-button">
 				<img src="img/play.svg" alt="Play Video" />
 			</div>
-
 			<iframe
 				class="videoSection__iframe"
 				id="video"
@@ -298,7 +297,71 @@
 	</div>
 </section>
 
+			<section class="formSection">
+	<div class="formSection__wrapper">
+		<div class="formSection__left-block">
+			<h2 class="formSection__left-block-title">
+				Ready<br />
+				to get started?
+			</h2>
+		</div>
+		<div class="formSection__form-block">
+			<h3 class="formSection__form-block-title">Contact us</h3>
+			<form action="#" method="post" class="formSection__form">
+				<div class="formSection__inputs">
+					<div class="formSection__input-group formSection__input-group_half">
+						<div class="formSection__input-group">
+							<label for="firstname">First Name</label>
+							<input
+								type="text"
+								id="firstname"
+								name="firstname"
+								placeholder="First Name"
+								required
+							/>
+						</div>
+						<div class="formSection__input-group">
+							<label for="lastname">Last Name</label>
+							<input
+								type="text"
+								id="lastname"
+								name="lastname"
+								placeholder="Last Name"
+								required
+							/>
+						</div>
+					</div>
+					<div class="formSection__input-group formSection__input-group_full">
+						<div class="formSection__input-group">
+							<label for="email">Email Address</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Email Address"
+								required
+							/>
+						</div>
+						<div class="formSection__input-group">
+							<label for="message">Your message</label>
+							<textarea
+								id="message"
+								name="message"
+								placeholder="Textarea"
+								required
+							></textarea>
+						</div>
+						<div class="formSection__submit">
+							<button type="submit">Submit</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
 		</main>
-		<script src="js/app.min.js?_v=20231127233215"></script>
+		<script src="js/app.min.js?_v=20231128150227"></script>
 	</body>
 </html>
