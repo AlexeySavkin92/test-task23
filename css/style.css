@@ -1001,6 +1001,14 @@ template {
   font-style: normal;
 }
 
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
   max-width: 1600px;
   margin: 0 auto;
