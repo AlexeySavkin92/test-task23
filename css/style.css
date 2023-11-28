@@ -42,11 +42,14 @@ main {
 h1,
 h2,
 h3,
+h4,
 p,
 span,
 ul,
 li {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 button {
@@ -1054,6 +1057,7 @@ template {
 .formSection__input-group textarea {
   padding: 15px 13px;
   height: 96px;
+  resize: none;
 }
 
 .formSection__input-group__submit {
@@ -1095,6 +1099,89 @@ template {
   border: solid 2px #ff0000;
 }
 
+.footer {
+  background-color: #363636;
+}
+
+.footer__wrapper {
+  padding-top: 56px;
+  padding-bottom: 49px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1152px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin: 0 auto;
+  margin-top: 97px;
+}
+
+.footer__news {
+  width: 299px;
+  height: 295px;
+  border: 1px solid white;
+}
+
+.footer__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 132px;
+  font-family: ProximaNova;
+  text-transform: uppercase;
+}
+
+.footer__columns .footer__navigation,
+.footer__columns .footer__links,
+.footer__columns .footer__contact-us {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.footer__columns .footer__navigation-info,
+.footer__columns .footer__links-info,
+.footer__columns .footer__contact-us-info {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.footer__columns .footer__navigation-info span,
+.footer__columns .footer__links-info span,
+.footer__columns .footer__contact-us-info span {
+  padding-left: 15px;
+  text-transform: lowercase;
+}
+
+.footer__columns .footer__navigation h4,
+.footer__columns .footer__links h4,
+.footer__columns .footer__contact-us h4 {
+  color: #ff8b00;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.footer__copyright {
+  color: white;
+  font-size: 10px;
+  font-family: Raleway;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 20px;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 1px 0 2px;
+  background-color: black;
+}
+
 @font-face {
   font-family: ProximaNova;
   font-display: swap;
@@ -1130,6 +1217,5 @@ template {
 body {
   max-width: 1600px;
   margin: 0 auto;
-  height: 4000px;
   position: relative;
 }
