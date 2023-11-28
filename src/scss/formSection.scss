@@ -2,7 +2,6 @@
 	background-color: #232323;
 	position: relative;
 	z-index: 999;
-
 	&__wrapper {
 		color: $primary;
 		display: flex;
@@ -13,7 +12,6 @@
 		font-family: ProximaNova;
 		word-wrap: break-word;
 	}
-
 	&__left-block {
 		&-title {
 			position: relative;
@@ -22,18 +20,14 @@
 			font-weight: 700;
 			line-height: 55px;
 			z-index: 1;
-			//visibility: visible;
 		}
 		&-decor {
-			//width: 500px;
 			position: absolute;
 			top: 0;
 			left: 0;
 			z-index: 0;
-			//	opacity: 0.1;
 		}
 	}
-
 	&__form-block {
 		flex: 1 1 auto;
 		max-width: 640px;
@@ -50,58 +44,34 @@
 			z-index: 0;
 		}
 	}
-
 	&__form {
 		position: relative;
 		z-index: 1;
-	} // Стили для формы
+	}
 	&__inputs {
 		display: flex;
 		flex-direction: column;
-
-		// display: grid;
-		// grid-template-columns: repeat(2, 1fr);
-		/* регулировка ширины колонок */
-		//gap: 20px; /* промежуток между элементами */
-	} // Стили для блока с полями ввода
+	}
 	&__input-group {
 		margin-top: 28px;
-
 		display: flex;
 		flex-direction: column;
-		//justify-content: start;
 		width: 100%;
-
 		&_half {
 			margin-top: 0px;
-			width: 100%; /* Ширина 100% для инпутов половины колонки */
-			//max-width: calc(50% - 10px);
+			width: 100%;
 			display: flex;
 			flex-direction: row;
 			gap: 20px;
-
-			// display: grid;
-			// grid-template-columns: repeat(2, 1fr);
-			//flex-direction: row;
 		}
 		&_full {
 			margin-top: 0px;
-
-			//margin-top: 14px;
-
-			//display: flex;
-			//flex-direction: column; // width: 100%; /* Ширина 100% для инпутов полной ширины */
-			// max-width: calc(100% - 10px);
 		}
-
-		// Стили для группы полей ввода
 		label {
 			font-size: 13px;
 			font-weight: 600;
 			line-height: 19px;
-			// Стили для меток
 		}
-
 		input[type="text"],
 		input[type="email"],
 		textarea {
@@ -120,7 +90,6 @@
 				border: 1px solid $primary;
 				color: black;
 			}
-
 			&::placeholder {
 				color: #9e9e9e;
 			}
@@ -128,15 +97,14 @@
 		textarea {
 			padding: 15px 13px;
 			height: 96px;
+			resize: none;
 		}
-
 		&__submit {
 			width: fit-content;
 		}
 	}
 	&__button {
 		margin-top: 4px;
-
 		color: $primary;
 		width: 201px;
 		height: 53px;
@@ -147,7 +115,6 @@
 		line-height: 18px;
 		font-weight: 700;
 		transition: 0.2s;
-
 		&:hover {
 			background-color: darken($accent, 3%);
 		}
@@ -155,7 +122,6 @@
 			transform: translateY(1px);
 		}
 	}
-
 	.chek-valid input:invalid {
 		border: solid 2px #ff0000;
 	}

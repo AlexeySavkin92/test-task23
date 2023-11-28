@@ -1,0 +1,83 @@
+.footer {
+	background-color: #363636;
+
+	&__wrapper {
+		padding-top: 56px;
+		padding-bottom: 49px;
+		color: $primary;
+		display: flex;
+		max-width: 1152px;
+		justify-content: space-between;
+		align-items: start;
+		margin: 0 auto;
+		margin-top: 97px;
+
+		// стили для .footer__wrapper
+	}
+
+	&__news {
+		width: 299px;
+		height: 295px;
+		border: 1px solid white;
+		// стили для .footer__news
+	}
+
+	&__columns {
+		display: flex;
+		gap: 132px;
+		font-family: ProximaNova;
+		text-transform: uppercase;
+
+		//flex-direction: column;
+		// стили для .footer__columns
+		.footer__navigation,
+		.footer__links,
+		.footer__contact-us {
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 20px;
+			// стили для .footer__columns-navigation
+
+			// стили для .footer__links
+
+			&-list {
+				// стили для .footer__links-list
+			}
+
+			// стили для .footer__contact-us
+
+			&-info {
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 18px;
+				span {
+					padding-left: 15px;
+					text-transform: lowercase;
+				}
+				// стили для .footer__contact-info
+			}
+			h4 {
+				color: $accent;
+				font-size: 14px;
+				font-weight: 700;
+				line-height: 20px;
+				word-wrap: break-word;
+				// стили для .footer__columns-title
+			}
+		}
+	}
+
+	&__copyright {
+		color: white;
+		font-size: 10px;
+		font-family: Raleway;
+		font-weight: 500;
+		text-transform: uppercase;
+		line-height: 20px;
+		word-wrap: break-word;
+		text-align: center;
+		padding: 1px 0 2px;
+		background-color: black;
+		// стили для .footer__copyright
+	}
+}
