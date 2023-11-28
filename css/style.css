@@ -198,6 +198,14 @@ textarea {
   /* 2 */
 }
 
+input,
+textarea:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -893,6 +901,8 @@ template {
 
 .formSection {
   background-color: #232323;
+  position: relative;
+  z-index: 999;
 }
 
 .formSection__wrapper {
@@ -902,7 +912,7 @@ template {
   display: flex;
   margin: 0 auto;
   max-width: 1262px;
-  padding-top: 120px;
+  padding: 120px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -911,14 +921,26 @@ template {
 }
 
 .formSection__left-block-title {
+  position: relative;
   padding-left: 31px;
   font-size: 55px;
   font-weight: 700;
   line-height: 55px;
+  z-index: 1;
+}
+
+.formSection__left-block-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .formSection__form-block {
-  min-width: 640px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: 640px;
 }
 
 .formSection__form-block-title {
@@ -926,6 +948,18 @@ template {
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 41px;
+}
+
+.formSection__form-block-decor {
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  z-index: 0;
+}
+
+.formSection__form {
+  position: relative;
+  z-index: 1;
 }
 
 .formSection__inputs {
@@ -937,11 +971,10 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   /* регулировка ширины колонок */
-  gap: 20px;
-  /* промежуток между элементами */
 }
 
 .formSection__input-group {
+  margin-top: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -953,6 +986,7 @@ template {
 }
 
 .formSection__input-group_half {
+  margin-top: 0px;
   width: 100%;
   /* Ширина 100% для инпутов половины колонки */
   display: -webkit-box;
@@ -965,16 +999,104 @@ template {
   gap: 20px;
 }
 
+.formSection__input-group_full {
+  margin-top: 0px;
+}
+
+.formSection__input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
 .formSection__input-group input[type=text],
-.formSection__input-group input[type=email] {
+.formSection__input-group input[type=email],
+.formSection__input-group textarea {
+  color: #3d3d3d;
   border-radius: 8px;
-  border: 1px #292929 solid;
+  border: 1px #d2d6da solid;
   height: 40px;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 7px;
+  margin-top: 8px;
+  padding: 9px 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.formSection__input-group input[type=text]:focus,
+.formSection__input-group input[type=email]:focus,
+.formSection__input-group textarea:focus {
+  border: 1px solid #ffffff;
+  color: black;
+}
+
+.formSection__input-group input[type=text]::-webkit-input-placeholder, .formSection__input-group input[type=email]::-webkit-input-placeholder, .formSection__input-group textarea::-webkit-input-placeholder {
+  color: #9e9e9e;
+}
+
+.formSection__input-group input[type=text]::-moz-placeholder, .formSection__input-group input[type=email]::-moz-placeholder, .formSection__input-group textarea::-moz-placeholder {
+  color: #9e9e9e;
+}
+
+.formSection__input-group input[type=text]:-ms-input-placeholder, .formSection__input-group input[type=email]:-ms-input-placeholder, .formSection__input-group textarea:-ms-input-placeholder {
+  color: #9e9e9e;
+}
+
+.formSection__input-group input[type=text]::-ms-input-placeholder, .formSection__input-group input[type=email]::-ms-input-placeholder, .formSection__input-group textarea::-ms-input-placeholder {
+  color: #9e9e9e;
+}
+
+.formSection__input-group input[type=text]::placeholder,
+.formSection__input-group input[type=email]::placeholder,
+.formSection__input-group textarea::placeholder {
+  color: #9e9e9e;
 }
 
 .formSection__input-group textarea {
-  border-radius: 8px;
-  border: 1px #292929 solid;
+  padding: 15px 13px;
+  height: 96px;
+}
+
+.formSection__input-group__submit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.formSection__button {
+  margin-top: 4px;
+  color: #ffffff;
+  width: 201px;
+  height: 53px;
+  padding: 4px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ff8b00;
+  line-height: 18px;
+  font-weight: 700;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.formSection__button:hover {
+  background-color: #f08300;
+}
+
+.formSection__button:active {
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.formSection .chek-valid input:invalid {
+  border: solid 2px #ff0000;
+}
+
+.formSection .chek-valid textarea:invalid {
+  border: solid 2px #ff0000;
 }
 
 @font-face {
