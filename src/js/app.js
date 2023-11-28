@@ -34,3 +34,27 @@ document.addEventListener("DOMContentLoaded", function () {
 		//iframe.src = "";
 	});
 });
+
+function highlightIfInputNotValid(idForm) {
+	let elChild = document.querySelector("#formSection__form").children;
+	for (var i = 0; i < elChild.length; i++) {
+		elChild[i].classList.add("chek-valid"); //second console output
+	}
+}
+
+function removeClassOutsideInput(event) {
+	let elChild = document.querySelector("#formSection__form").children;
+	const isClickedOutsideInputs = !Array.from(elChild).some((elChild) =>
+		elChild.contains(event.target)
+	);
+
+	if (isClickedOutsideInputs) {
+		for (var i = 0; i < elChild.length; i++) {
+			elChild[i].classList.remove("chek-valid"); //second console output
+		}
+	}
+}
+// Добавляем обработчик события клика к document
+document.addEventListener("click", removeClassOutsideInput);
+const btnSend = document.querySelector(".formSection__button");
+btnSend.addEventListener("click", highlightIfInputNotValid);
