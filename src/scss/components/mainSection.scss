@@ -1,11 +1,10 @@
 .main {
 	margin: 0 auto;
-	//height: clamp(800px, 100vh, 1400px);
 
 	&__section {
 		position: relative;
-		height: clamp(487px, calc(100vh - 228px), 640px);
-		padding-top: 228px;
+		height: clamp(487px, calc(100vh - 228px), 585px);
+		padding-top: 224px;
 		background-image: url("@img/Bg-header.svg");
 		background-size: cover;
 		background-position: bottom;
@@ -48,6 +47,7 @@
 								font-weight: 600;
 								line-height: 30px;
 								margin-top: 12px;
+								max-width: 490px;
 							}
 							& .main__section-button {
 								cursor: pointer;
@@ -71,6 +71,7 @@
 						}
 						& > .main__section-top-image-block {
 							margin-right: 65px;
+							padding-top: 10px;
 							& .main__section-image {
 							}
 						}
@@ -81,7 +82,7 @@
 				position: absolute;
 				display: flex;
 				flex-direction: column;
-				top: 50%;
+				top: 46%;
 				right: 54px;
 				transform: translateY(-50%);
 
@@ -105,7 +106,6 @@
 		}
 
 		&-bottom {
-			//margin-top: 102px;
 			position: absolute;
 			bottom: 0;
 
@@ -121,7 +121,7 @@
 				}
 				.main__section-scroll-image {
 					cursor: pointer;
-					padding-top: 29px;
+					padding-top: 19px;
 					padding-bottom: 50px;
 					width: 62px;
 				}

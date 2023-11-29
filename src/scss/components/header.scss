@@ -31,12 +31,10 @@
 		display: flex;
 		list-style-type: none;
 		padding-inline-start: 0px;
+		gap: 28px;
 
 		li {
-			margin-left: 28px;
-
 			cursor: pointer;
-
 			position: relative;
 			&::after {
 				content: "";

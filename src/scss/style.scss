@@ -1,16 +1,10 @@
-@import "vars";
+@import "./components/vars";
 @import "../../node_modules/normalize.css/normalize";
-@import "header.scss";
-@import "mainSection.scss";
-@import "statisticsSection.scss";
-@import "descriptionsSection.scss";
-@import "videoSection.scss";
-@import "formSection.scss";
-@import "footer.scss";
+@import "./components/header";
+@import "./components/mainSection";
+@import "./components/statisticsSection";
+@import "./components/descriptionsSection";
+@import "./components/videoSection";
+@import "./components/formSection";
+@import "./components/footer";
 @import "fonts";
-
-body {
-	max-width: 1600px;
-	margin: 0 auto;
-	position: relative;
-}

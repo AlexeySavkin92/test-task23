@@ -2,39 +2,36 @@
 	background-color: #f8f8f8;
 
 	&__wrapper {
-		max-width: 1000px;
+		max-width: 988px;
 		font-family: ProximaNova;
 		color: $secondary;
 		margin: 0 auto;
 		padding-top: 145px;
-		padding-bottom: 120px;
-		padding-right: 6px;
+		padding-bottom: 119px;
 	}
 
 	&__title-block {
 		text-align: right;
-		padding-right: 60px;
+		padding-right: 54px;
 		margin-bottom: 70px;
 		position: relative;
 
 		& .descriptionsSection__title {
-			font-size: 60px;
-			font-weight: 700;
 			line-height: 72px;
-			font-size: 36px;
+			font-size: 60px;
 			font-weight: 700;
 		}
 
 		& .descriptionsSection__image-decor {
 			position: absolute;
-			top: -20px;
-			right: -6px;
+			top: -25px;
+			right: -10px;
 		}
 	}
 	&__grid-container {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 50px 100px;
+		grid-template-columns: 271px 241px 1fr;
+		gap: 56px 100px;
 
 		.descriptionsSection__grid-item {
 			display: grid;
@@ -42,7 +39,37 @@
 			grid-template-rows: 150px auto 1fr;
 			&:nth-child(3) {
 				min-width: 288px;
+				img {
+					position: relative;
+					right: 15px;
+				}
 			}
+			&:nth-child(5) {
+				img {
+					position: relative;
+					left: 10px;
+				}
+			}
+			&:nth-child(4) {
+				img {
+					position: relative;
+					right: 13px;
+				}
+			}
+
+			&:nth-child(6) {
+				img {
+					position: relative;
+					right: 11px;
+				}
+			}
+			&:first-child {
+				img {
+					position: relative;
+					right: 25px;
+				}
+			}
+
 			&-image {
 				align-self: end;
 				justify-self: center;
@@ -56,6 +83,7 @@
 				text-transform: uppercase;
 				line-height: 20px;
 				word-wrap: break-word;
+				letter-spacing: -0.02em;
 			}
 
 			&-text {
@@ -66,6 +94,7 @@
 				font-weight: 400;
 				line-height: 19px;
 				word-wrap: break-word;
+				letter-spacing: -0.01em;
 			}
 		}
 	}

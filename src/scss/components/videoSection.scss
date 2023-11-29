@@ -2,7 +2,6 @@
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 		max-width: 1326px;
 		margin: 0 auto;
 		padding-top: 114px;
@@ -12,6 +11,7 @@
 	&__info-block {
 		padding-left: 23px;
 		padding-right: 124px;
+		padding-top: 95px;
 		max-width: 455px;
 
 		&-title {
@@ -24,17 +24,18 @@
 		}
 
 		&-description {
-			margin-top: 15px;
+			margin-top: 7px;
 			color: #878787;
 			font-size: 15px;
 			font-family: ProximaNova;
 			font-weight: 400;
 			line-height: 21px;
 			word-wrap: break-word;
+			letter-spacing: -0.02em;
 		}
 
 		& button {
-			margin-top: 38px;
+			margin-top: 30px;
 			color: $primary;
 			font-size: 14px;
 			font-family: ProximaNova;

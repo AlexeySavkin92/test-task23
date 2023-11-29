@@ -3,7 +3,7 @@
 		padding: 133px 0 131px;
 		display: flex;
 		justify-content: space-between;
-		max-width: 899px;
+		max-width: 908px;
 		margin: 0 auto;
 		font-family: ProximaNova;
 		font-weight: 700;
@@ -15,7 +15,10 @@
 			flex-direction: column;
 			align-items: center;
 			&:not(:last-child) {
-				margin-right: 94px;
+				margin-right: 93px;
+			}
+			&:last-child {
+				margin-right: 10px;
 			}
 		}
 	}

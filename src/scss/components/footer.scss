@@ -1,5 +1,6 @@
 .footer {
 	background-color: #363636;
+	position: relative;
 
 	&__wrapper {
 		padding-top: 56px;
@@ -11,6 +12,11 @@
 		align-items: start;
 		margin: 0 auto;
 		margin-top: 97px;
+		&-logo {
+			position: absolute;
+			right: 32px;
+			bottom: 56px;
+		}
 	}
 
 	&__news {
@@ -22,28 +28,18 @@
 		&-container {
 			display: flex;
 			flex-direction: column;
-			// Стили для контейнера новостей
 		}
 
 		&-header {
 			display: flex;
-			//padding: 11px;
 			background-color: $secondary;
-			// Стили для заголовка новостей
 			& img {
 				padding: 10px 10px 11px;
 			}
 		}
 
-		// &-header-logo {
-		//
-		//
-		// 	// Стили для логотипа
-		// }
-
 		&-header-title {
 			padding: 11px 0 11px 16px;
-			// Стили для заголовка новостей
 			& h3 {
 				font-size: 22px;
 				font-weight: 600;
@@ -60,7 +56,6 @@
 		}
 
 		&-list {
-			//
 			padding-left: 31px;
 			padding-bottom: 19px;
 			padding-right: 10px;
@@ -85,7 +80,6 @@
 				align-items: center;
 			}
 
-			// Стили для каждой новости
 			&-title {
 				font-weight: 400;
 				color: #999999;
@@ -93,7 +87,6 @@
 			}
 
 			&-link {
-				//display: inline-block;
 				margin-top: 2px;
 				line-height: 18px;
 				color: #7050e5;
