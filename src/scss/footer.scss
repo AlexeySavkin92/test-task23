@@ -36,33 +36,72 @@
 			font-size: 14px;
 			font-weight: 600;
 			line-height: 20px;
+
 			// стили для .footer__columns-navigation
 
 			// стили для .footer__links
-
+			& li {
+				margin-top: 8px;
+				transition: 0.2s;
+				&:hover {
+					color: $accent;
+					cursor: pointer;
+				}
+			}
 			&-list {
+				margin-top: 20px;
+
 				// стили для .footer__links-list
 			}
 
 			// стили для .footer__contact-us
 
 			&-info {
+				margin-top: 20px;
+
 				font-size: 14px;
 				font-weight: 600;
 				line-height: 18px;
-				span {
+
+				& a {
 					padding-left: 15px;
 					text-transform: lowercase;
+					text-decoration: none;
+					color: $primary;
+					transition: 0.2s;
+					&:hover {
+						color: $accent;
+					}
+				}
+				&:last-child {
+					margin-top: 8px;
 				}
 				// стили для .footer__contact-info
 			}
 			h4 {
+				//margin-top: 20px;
+
 				color: $accent;
 				font-size: 14px;
 				font-weight: 700;
 				line-height: 20px;
 				word-wrap: break-word;
-				// стили для .footer__columns-title
+				background-image: url("@img/hex-active.svg");
+				background-position: left;
+				background-repeat: no-repeat;
+				background-size: contain;
+
+				padding-left: 28px;
+				// &::before {
+				// 	content: "";
+				// 	width: 17.5px;
+				// 	height: 20px;
+				// 	background-image: url("@img/hex-active.svg");
+				// 	background-position: left;
+				// 	background-size: 17.5px;
+				// 	background-repeat: no-repeat;
+				// }
+				// // стили для .footer__columns-title
 			}
 		}
 	}
@@ -78,6 +117,15 @@
 		text-align: center;
 		padding: 1px 0 2px;
 		background-color: black;
+		&-image {
+			width: 9px;
+			padding-top: 1px;
+			background-image: url("@img/hex-active.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: left;
+			display: inline-block;
+		}
 		// стили для .footer__copyright
 	}
 }
