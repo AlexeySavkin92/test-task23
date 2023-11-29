@@ -406,6 +406,7 @@ template {
 .header__wrapper {
   position: absolute;
   width: 100%;
+  z-index: 2;
 }
 
 .header__container {
@@ -472,10 +473,12 @@ template {
 }
 
 .main__section {
+  position: relative;
+  height: clamp(487px, 100vh - 228px, 640px);
   padding-top: 228px;
   background-image: url("../img/Bg-header.svg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   color: #ffffff;
   font-family: ProximaNova;
   word-wrap: break-word;
@@ -603,7 +606,8 @@ template {
 }
 
 .main__section-bottom {
-  margin-top: 102px;
+  position: absolute;
+  bottom: 0;
 }
 
 .main__section-bottom-container {
@@ -1122,9 +1126,108 @@ template {
 }
 
 .footer__news {
+  font-family: ProximaNova;
+  word-wrap: break-word;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 299px;
   height: 295px;
-  border: 1px solid white;
+}
+
+.footer__news-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__news-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #7050e5;
+}
+
+.footer__news-header img {
+  padding: 10px 10px 11px;
+}
+
+.footer__news-header-title {
+  padding: 11px 0 11px 16px;
+}
+
+.footer__news-header-title h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.18px;
+}
+
+.footer__news-header-title h4 {
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer__news-list {
+  padding-left: 31px;
+  padding-bottom: 19px;
+  padding-right: 10px;
+  background-color: #ffffff;
+}
+
+.footer__news-item {
+  margin-top: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer__news-item:last-child a {
+  margin-top: 0;
+  margin-left: 4px;
+}
+
+.footer__news-item:first-child {
+  margin-top: 20px;
+}
+
+.footer__news-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__news-item-title {
+  font-weight: 400;
+  color: #999999;
+  font-size: 13px;
+}
+
+.footer__news-item-link {
+  margin-top: 2px;
+  line-height: 18px;
+  color: #7050e5;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer__news-item-link:hover {
+  text-decoration: underline;
+}
+
+.footer__news-item-date {
+  margin-top: 6px;
+  color: #555555;
+  font-size: 11px;
 }
 
 .footer__columns {
