@@ -11,15 +11,105 @@
 		align-items: start;
 		margin: 0 auto;
 		margin-top: 97px;
-
-		// стили для .footer__wrapper
 	}
 
 	&__news {
+		font-family: ProximaNova;
+		word-wrap: break-word;
+		box-sizing: border-box;
 		width: 299px;
 		height: 295px;
-		border: 1px solid white;
-		// стили для .footer__news
+		&-container {
+			display: flex;
+			flex-direction: column;
+			// Стили для контейнера новостей
+		}
+
+		&-header {
+			display: flex;
+			//padding: 11px;
+			background-color: $secondary;
+			// Стили для заголовка новостей
+			& img {
+				padding: 10px 10px 11px;
+			}
+		}
+
+		// &-header-logo {
+		//
+		//
+		// 	// Стили для логотипа
+		// }
+
+		&-header-title {
+			padding: 11px 0 11px 16px;
+			// Стили для заголовка новостей
+			& h3 {
+				font-size: 22px;
+				font-weight: 600;
+				line-height: 18px;
+				letter-spacing: 0.18px;
+			}
+
+			& h4 {
+				margin-top: 2px;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 18px;
+			}
+		}
+
+		&-list {
+			//
+			padding-left: 31px;
+			padding-bottom: 19px;
+			padding-right: 10px;
+			background-color: $primary;
+		}
+
+		&-item {
+			margin-top: 16px;
+			font-weight: 400;
+			line-height: 18px;
+			&:last-child a {
+				margin-top: 0;
+				margin-left: 4px;
+			}
+
+			&:first-child {
+				margin-top: 20px;
+			}
+			&:last-child {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+			}
+
+			// Стили для каждой новости
+			&-title {
+				font-weight: 400;
+				color: #999999;
+				font-size: 13px;
+			}
+
+			&-link {
+				//display: inline-block;
+				margin-top: 2px;
+				line-height: 18px;
+				color: #7050e5;
+				font-size: 13px;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			&-date {
+				margin-top: 6px;
+				color: #555555;
+				font-size: 11px;
+			}
+		}
 	}
 
 	&__columns {
@@ -28,8 +118,6 @@
 		font-family: ProximaNova;
 		text-transform: uppercase;
 
-		//flex-direction: column;
-		// стили для .footer__columns
 		.footer__navigation,
 		.footer__links,
 		.footer__contact-us {
@@ -37,9 +125,6 @@
 			font-weight: 600;
 			line-height: 20px;
 
-			// стили для .footer__columns-navigation
-
-			// стили для .footer__links
 			& li {
 				margin-top: 8px;
 				transition: 0.2s;
@@ -50,11 +135,7 @@
 			}
 			&-list {
 				margin-top: 20px;
-
-				// стили для .footer__links-list
 			}
-
-			// стили для .footer__contact-us
 
 			&-info {
 				margin-top: 20px;
@@ -76,11 +157,8 @@
 				&:last-child {
 					margin-top: 8px;
 				}
-				// стили для .footer__contact-info
 			}
 			h4 {
-				//margin-top: 20px;
-
 				color: $accent;
 				font-size: 14px;
 				font-weight: 700;
@@ -90,18 +168,7 @@
 				background-position: left;
 				background-repeat: no-repeat;
 				background-size: contain;
-
 				padding-left: 28px;
-				// &::before {
-				// 	content: "";
-				// 	width: 17.5px;
-				// 	height: 20px;
-				// 	background-image: url("@img/hex-active.svg");
-				// 	background-position: left;
-				// 	background-size: 17.5px;
-				// 	background-repeat: no-repeat;
-				// }
-				// // стили для .footer__columns-title
 			}
 		}
 	}
@@ -117,6 +184,7 @@
 		text-align: center;
 		padding: 1px 0 2px;
 		background-color: black;
+
 		&-image {
 			width: 9px;
 			padding-top: 1px;
@@ -126,6 +194,5 @@
 			background-position: left;
 			display: inline-block;
 		}
-		// стили для .footer__copyright
 	}
 }
