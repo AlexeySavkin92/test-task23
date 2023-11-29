@@ -13,6 +13,8 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Sections
@@ -23,7 +25,9 @@ html {
  */
 
 body {
-  margin: 0;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
 }
 
 /**
@@ -444,10 +448,10 @@ template {
   list-style-type: none;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
+  gap: 28px;
 }
 
 .header__menu-list li {
-  margin-left: 28px;
   cursor: pointer;
   position: relative;
 }
@@ -474,8 +478,8 @@ template {
 
 .main__section {
   position: relative;
-  height: clamp(487px, 100vh - 228px, 640px);
-  padding-top: 228px;
+  height: clamp(487px, 100vh - 228px, 585px);
+  padding-top: 224px;
   background-image: url("../img/Bg-header.svg");
   background-size: cover;
   background-position: bottom;
@@ -540,6 +544,7 @@ template {
   font-weight: 600;
   line-height: 30px;
   margin-top: 12px;
+  max-width: 490px;
 }
 
 .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-button {
@@ -568,6 +573,7 @@ template {
 
 .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-image-block {
   margin-right: 65px;
+  padding-top: 10px;
 }
 
 .main__section-top-slider-buttons {
@@ -579,7 +585,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 50%;
+  top: 46%;
   right: 54px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -632,7 +638,7 @@ template {
 
 .main__section-bottom-container .main__section-scroll-image {
   cursor: pointer;
-  padding-top: 29px;
+  padding-top: 19px;
   padding-bottom: 50px;
   width: 62px;
 }
@@ -645,7 +651,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 899px;
+  max-width: 908px;
   margin: 0 auto;
   font-family: ProximaNova;
   font-weight: 700;
@@ -667,7 +673,11 @@ template {
 }
 
 .statisticsSection__container-item:not(:last-child) {
-  margin-right: 94px;
+  margin-right: 93px;
+}
+
+.statisticsSection__container-item:last-child {
+  margin-right: 10px;
 }
 
 .statisticsSection__value {
@@ -690,42 +700,39 @@ template {
 }
 
 .descriptionsSection__wrapper {
-  max-width: 1000px;
+  max-width: 988px;
   font-family: ProximaNova;
   color: #7050e5;
   margin: 0 auto;
   padding-top: 145px;
-  padding-bottom: 120px;
-  padding-right: 6px;
+  padding-bottom: 119px;
 }
 
 .descriptionsSection__title-block {
   text-align: right;
-  padding-right: 60px;
+  padding-right: 54px;
   margin-bottom: 70px;
   position: relative;
 }
 
 .descriptionsSection__title-block .descriptionsSection__title {
-  font-size: 60px;
-  font-weight: 700;
   line-height: 72px;
-  font-size: 36px;
+  font-size: 60px;
   font-weight: 700;
 }
 
 .descriptionsSection__title-block .descriptionsSection__image-decor {
   position: absolute;
-  top: -20px;
-  right: -6px;
+  top: -25px;
+  right: -10px;
 }
 
 .descriptionsSection__grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px 100px;
+  -ms-grid-columns: 271px 241px 1fr;
+  grid-template-columns: 271px 241px 1fr;
+  gap: 56px 100px;
 }
 
 .descriptionsSection__grid-container .descriptionsSection__grid-item {
@@ -737,6 +744,31 @@ template {
 
 .descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(3) {
   min-width: 288px;
+}
+
+.descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(3) img {
+  position: relative;
+  right: 15px;
+}
+
+.descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(5) img {
+  position: relative;
+  left: 10px;
+}
+
+.descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(4) img {
+  position: relative;
+  right: 13px;
+}
+
+.descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(6) img {
+  position: relative;
+  right: 11px;
+}
+
+.descriptionsSection__grid-container .descriptionsSection__grid-item:first-child img {
+  position: relative;
+  right: 25px;
 }
 
 .descriptionsSection__grid-container .descriptionsSection__grid-item-image {
@@ -756,6 +788,7 @@ template {
   text-transform: uppercase;
   line-height: 20px;
   word-wrap: break-word;
+  letter-spacing: -0.02em;
 }
 
 .descriptionsSection__grid-container .descriptionsSection__grid-item-text {
@@ -767,6 +800,7 @@ template {
   font-weight: 400;
   line-height: 19px;
   word-wrap: break-word;
+  letter-spacing: -0.01em;
 }
 
 .videoSection__wrapper {
@@ -776,9 +810,6 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   max-width: 1326px;
   margin: 0 auto;
   padding-top: 114px;
@@ -788,6 +819,7 @@ template {
 .videoSection__info-block {
   padding-left: 23px;
   padding-right: 124px;
+  padding-top: 95px;
   max-width: 455px;
 }
 
@@ -801,17 +833,18 @@ template {
 }
 
 .videoSection__info-block-description {
-  margin-top: 15px;
+  margin-top: 7px;
   color: #878787;
   font-size: 15px;
   font-family: ProximaNova;
   font-weight: 400;
   line-height: 21px;
   word-wrap: break-word;
+  letter-spacing: -0.02em;
 }
 
 .videoSection__info-block button {
-  margin-top: 38px;
+  margin-top: 30px;
   color: #ffffff;
   font-size: 14px;
   font-family: ProximaNova;
@@ -927,6 +960,7 @@ template {
 
 .formSection__left-block-title {
   position: relative;
+  padding-top: 8px;
   padding-left: 31px;
   font-size: 55px;
   font-weight: 700;
@@ -1105,6 +1139,7 @@ template {
 
 .footer {
   background-color: #363636;
+  position: relative;
 }
 
 .footer__wrapper {
@@ -1123,6 +1158,12 @@ template {
           align-items: start;
   margin: 0 auto;
   margin-top: 97px;
+}
+
+.footer__wrapper-logo {
+  position: absolute;
+  right: 32px;
+  bottom: 56px;
 }
 
 .footer__news {
@@ -1368,10 +1409,4 @@ template {
   src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
-}
-
-body {
-  max-width: 1600px;
-  margin: 0 auto;
-  position: relative;
 }
