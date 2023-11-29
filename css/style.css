@@ -1144,19 +1144,57 @@ template {
   line-height: 20px;
 }
 
+.footer__columns .footer__navigation li,
+.footer__columns .footer__links li,
+.footer__columns .footer__contact-us li {
+  margin-top: 8px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__columns .footer__navigation li:hover,
+.footer__columns .footer__links li:hover,
+.footer__columns .footer__contact-us li:hover {
+  color: #ff8b00;
+  cursor: pointer;
+}
+
+.footer__columns .footer__navigation-list,
+.footer__columns .footer__links-list,
+.footer__columns .footer__contact-us-list {
+  margin-top: 20px;
+}
+
 .footer__columns .footer__navigation-info,
 .footer__columns .footer__links-info,
 .footer__columns .footer__contact-us-info {
+  margin-top: 20px;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
 }
 
-.footer__columns .footer__navigation-info span,
-.footer__columns .footer__links-info span,
-.footer__columns .footer__contact-us-info span {
+.footer__columns .footer__navigation-info a,
+.footer__columns .footer__links-info a,
+.footer__columns .footer__contact-us-info a {
   padding-left: 15px;
   text-transform: lowercase;
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__columns .footer__navigation-info a:hover,
+.footer__columns .footer__links-info a:hover,
+.footer__columns .footer__contact-us-info a:hover {
+  color: #ff8b00;
+}
+
+.footer__columns .footer__navigation-info:last-child,
+.footer__columns .footer__links-info:last-child,
+.footer__columns .footer__contact-us-info:last-child {
+  margin-top: 8px;
 }
 
 .footer__columns .footer__navigation h4,
@@ -1167,6 +1205,11 @@ template {
   font-weight: 700;
   line-height: 20px;
   word-wrap: break-word;
+  background-image: url("../img/hex-active.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 28px;
 }
 
 .footer__copyright {
@@ -1180,6 +1223,16 @@ template {
   text-align: center;
   padding: 1px 0 2px;
   background-color: black;
+}
+
+.footer__copyright-image {
+  width: 9px;
+  padding-top: 1px;
+  background-image: url("../img/hex-active.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  display: inline-block;
 }
 
 @font-face {
