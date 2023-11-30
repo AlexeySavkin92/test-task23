@@ -1,132 +1,143 @@
-.formSection {
-	background-color: $bg-form;
-	position: relative;
-	z-index: 999;
-	&__wrapper {
-		color: $primary;
-		display: flex;
-		margin: 0 auto;
-		max-width: 1262px;
-		padding: 120px 0;
-		justify-content: space-between;
-		font-family: ProximaNova;
-		word-wrap: break-word;
-	}
-	&__left-block {
-		&-title {
+@media (min-width: $tablet) {
+	.formSection {
+		background-color: $bg-form;
+		position: relative;
+		z-index: 999;
+		&__wrapper {
+			color: $primary;
+			display: flex;
+			margin: 0 auto;
+			max-width: 1262px;
+			padding: 120px 100px;
+			justify-content: space-between;
+			font-family: ProximaNova;
+			word-wrap: break-word;
+			@media (max-width: $desktop) {
+				padding: 50px 50px;
+			}
+		}
+		&__left-block {
+			padding-right: 100px;
+
+			&-title {
+				@media (max-width: $desktop) {
+					padding-left: 0px;
+				}
+				position: relative;
+				padding-top: 8px;
+				padding-left: 31px;
+				font-size: $heading-lg;
+				font-weight: $bold;
+				line-height: $heading-lh-md;
+				z-index: 1;
+			}
+			&-decor {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 0;
+			}
+		}
+		&__form-block {
+			flex: 1 1 auto;
+			max-width: 640px;
+			&-title {
+				font-size: $heading-sm;
+				font-weight: $bold;
+				letter-spacing: -0.03em;
+				line-height: 41px;
+			}
+			&-decor {
+				position: absolute;
+				bottom: 0;
+				right: 2%;
+				z-index: 0;
+			}
+		}
+		&__form {
 			position: relative;
-			padding-top: 8px;
-			padding-left: 31px;
-			font-size: $heading-lg;
-			font-weight: $bold;
-			line-height: $heading-lh-md;
 			z-index: 1;
 		}
-		&-decor {
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 0;
-		}
-	}
-	&__form-block {
-		flex: 1 1 auto;
-		max-width: 640px;
-		&-title {
-			font-size: $heading-sm;
-			font-weight: $bold;
-			letter-spacing: -0.03em;
-			line-height: 41px;
-		}
-		&-decor {
-			position: absolute;
-			bottom: 0;
-			right: 2%;
-			z-index: 0;
-		}
-	}
-	&__form {
-		position: relative;
-		z-index: 1;
-	}
-	&__inputs {
-		display: flex;
-		flex-direction: column;
-	}
-	&__input-group {
-		margin-top: 28px;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		&_half {
-			margin-top: 0px;
-			width: 100%;
+		&__inputs {
 			display: flex;
-			flex-direction: row;
-			gap: 20px;
+			flex-direction: column;
 		}
-		&_full {
-			margin-top: 0px;
-		}
-		label {
-			font-size: $small-lg;
-			font-weight: $semi-bold;
-			line-height: $text-lh-xs;
-		}
-		input[type="text"],
-		input[type="email"],
-		textarea {
-			color: $input-text;
-			border-radius: 8px;
-			border: 1px $border-color solid;
-			height: 40px;
-			font-family: Raleway;
-			font-weight: $medium;
-			font-size: $text-sm;
-			line-height: $small-lh-md;
-			margin-top: 8px;
-			padding: 9px 13px;
-			box-sizing: border-box;
-			&:focus {
-				border: 1px solid $primary;
-				color: $black;
+		&__input-group {
+			margin-top: 28px;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			&_half {
+				margin-top: 0px;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				gap: 20px;
 			}
-			&::placeholder {
-				color: $placeholder-color;
+			&_full {
+				margin-top: 0px;
+			}
+			label {
+				padding-left: 4px;
+				font-size: $small-lg;
+				font-weight: $semi-bold;
+				line-height: $text-lh-xs;
+			}
+			input[type="text"],
+			input[type="email"],
+			textarea {
+				color: $input-text;
+				border-radius: 8px;
+				border: 1px $border-color solid;
+				height: 40px;
+				font-family: Raleway;
+				font-weight: $medium;
+				font-size: $text-sm;
+				line-height: $small-lh-md;
+				margin-top: 8px;
+				padding: 9px 13px;
+				box-sizing: border-box;
+				&:focus {
+					border: 1px solid $primary;
+					color: $black;
+				}
+				&::placeholder {
+					color: $placeholder-color;
+				}
+			}
+			textarea {
+				padding: 15px 13px;
+				height: 96px;
+				resize: none;
+			}
+			&__submit {
+				width: fit-content;
 			}
 		}
-		textarea {
-			padding: 15px 13px;
-			height: 96px;
-			resize: none;
+		&__button {
+			margin-top: 4px;
+			color: $primary;
+			width: 201px;
+			height: 53px;
+			padding: 4px 40px;
+			border-radius: 4px;
+			cursor: pointer;
+			background-color: $accent;
+			line-height: $heading-lh-sm;
+			font-weight: $bold;
+			transition: 0.2s;
+			&:hover {
+				background-color: darken($accent, 3%);
+			}
+			&:active {
+				transform: translateY(1px);
+			}
 		}
-		&__submit {
-			width: fit-content;
+		.chek-valid input:invalid {
+			border: solid 2px $error;
 		}
-	}
-	&__button {
-		margin-top: 4px;
-		color: $primary;
-		width: 201px;
-		height: 53px;
-		padding: 4px 40px;
-		border-radius: 4px;
-		cursor: pointer;
-		background-color: $accent;
-		line-height: $heading-lh-sm;
-		font-weight: $bold;
-		transition: 0.2s;
-		&:hover {
-			background-color: darken($accent, 3%);
+		.chek-valid textarea:invalid {
+			border: solid 2px $error;
 		}
-		&:active {
-			transform: translateY(1px);
-		}
-	}
-	.chek-valid input:invalid {
-		border: solid 2px $error;
-	}
-	.chek-valid textarea:invalid {
-		border: solid 2px $error;
 	}
 }
