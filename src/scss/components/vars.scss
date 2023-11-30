@@ -1,8 +1,58 @@
-//colors
+//--- colors
 $primary: #ffffff;
 $secondary: #7050e5;
 $accent: #ff8b00;
 $hover-text: rgb(61, 47, 47);
+$text-color: #878787;
+$date-color: #555555;
+$news-color: #999999;
+$bg-description: #f8f8f8;
+$bg-popup: rgba(0, 0, 0, 0.7);
+$bg-form: #232323;
+$bg-footer: #363636;
+$border-color: #d2d6da;
+$input-text: #3d3d3d;
+$black: rgb(0, 0, 0);
+$placeholder-color: #9e9e9e;
+$error: #ff0000;
+
+//--- font-size
+$heading-xl: 60px;
+$heading-lg: 55px;
+$heading-md: 40px;
+$heading-sm: 28px;
+$heading-xs: 22px;
+
+$text-xl: 18px;
+$text-lg: 16px;
+$text-md: 15px;
+$text-sm: 14px;
+
+$small-lg: 13px;
+$small-md: 11px;
+$small-sm: 10px;
+
+//--- line-height
+$heading-lh-xl: 72px;
+$heading-lh-lg: 68px;
+$heading-lh-md: 55px;
+$heading-lh-sm: 18px;
+
+$text-lh-xl: 30px;
+$text-lh-lg: 28px;
+$text-lh-md: 21px;
+$text-lh-sm: 20px;
+$text-lh-xs: 19px;
+
+$small-lh-lg: 45px;
+$small-lh-md: 7px;
+$small-lh-sm: 1px;
+
+//--- font-weight
+$bold: 700;
+$semi-bold: 600;
+$medium: 500;
+$regular: 400;
 
 // $primary-color: #3498db; // Основной цвет
 // $secondary-color: #2ecc71; // Вторичный цвет

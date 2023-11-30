@@ -532,12 +532,15 @@ template {
   background-color: #f8f8f8;
 }
 .descriptionsSection__wrapper {
-  max-width: 988px;
+  max-width: 1008px;
   font-family: ProximaNova;
   color: #7050e5;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 145px;
-  padding-bottom: 119px;
+  padding-bottom: 115px;
 }
 .descriptionsSection__title-block {
   text-align: right;
@@ -558,18 +561,15 @@ template {
 .descriptionsSection__grid-container {
   display: grid;
   grid-template-columns: 271px 241px 1fr;
-  gap: 56px 100px;
+  gap: 40px 100px;
 }
 .descriptionsSection__grid-container .descriptionsSection__grid-item {
   display: grid;
   grid-template-rows: 150px auto 1fr;
 }
-.descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(3) {
-  min-width: 288px;
-}
 .descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(3) img {
   position: relative;
-  right: 15px;
+  right: 9px;
 }
 .descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(5) img {
   position: relative;
@@ -581,7 +581,7 @@ template {
 }
 .descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(6) img {
   position: relative;
-  right: 11px;
+  right: 5px;
 }
 .descriptionsSection__grid-container .descriptionsSection__grid-item:first-child img {
   position: relative;
@@ -619,6 +619,8 @@ template {
   margin: 0 auto;
   padding-top: 114px;
   padding-bottom: 97px;
+  font-family: ProximaNova;
+  word-wrap: break-word;
 }
 .videoSection__info-block {
   padding-left: 23px;
@@ -629,29 +631,23 @@ template {
 .videoSection__info-block-title {
   color: #7050e5;
   font-size: 40px;
-  font-family: ProximaNova;
   font-weight: 700;
   line-height: 55px;
-  word-wrap: break-word;
 }
 .videoSection__info-block-description {
   margin-top: 7px;
   color: #878787;
   font-size: 15px;
-  font-family: ProximaNova;
   font-weight: 400;
   line-height: 21px;
-  word-wrap: break-word;
   letter-spacing: -0.02em;
 }
 .videoSection__info-block button {
   margin-top: 30px;
   color: #ffffff;
   font-size: 14px;
-  font-family: ProximaNova;
   font-weight: 700;
   line-height: 18px;
-  word-wrap: break-word;
   background-color: #ff8b00;
   padding: 4px 40px;
   border-radius: 4px;
@@ -808,7 +804,7 @@ template {
 .formSection__input-group input[type=email]:focus,
 .formSection__input-group textarea:focus {
   border: 1px solid #ffffff;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .formSection__input-group input[type=text]::placeholder,
 .formSection__input-group input[type=email]::placeholder,
@@ -1017,7 +1013,7 @@ template {
   padding-left: 28px;
 }
 .footer__copyright {
-  color: white;
+  color: #ffffff;
   font-size: 10px;
   font-family: Raleway;
   font-weight: 500;
@@ -1026,7 +1022,7 @@ template {
   word-wrap: break-word;
   text-align: center;
   padding: 1px 0 2px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 .footer__copyright-image {
   width: 9px;

@@ -1,13 +1,16 @@
 .descriptionsSection {
-	background-color: #f8f8f8;
+	background-color: $bg-description;
 
 	&__wrapper {
-		max-width: 988px;
+		max-width: 1008px;
 		font-family: ProximaNova;
 		color: $secondary;
 		margin: 0 auto;
+		box-sizing: border-box;
+		padding-left: 10px;
+		padding-right: 10px;
 		padding-top: 145px;
-		padding-bottom: 119px;
+		padding-bottom: 115px;
 	}
 
 	&__title-block {
@@ -17,9 +20,9 @@
 		position: relative;
 
 		& .descriptionsSection__title {
-			line-height: 72px;
-			font-size: 60px;
-			font-weight: 700;
+			line-height: $heading-lh-xl;
+			font-size: $heading-xl;
+			font-weight: $bold;
 		}
 
 		& .descriptionsSection__image-decor {
@@ -31,17 +34,16 @@
 	&__grid-container {
 		display: grid;
 		grid-template-columns: 271px 241px 1fr;
-		gap: 56px 100px;
+		gap: 40px 100px;
 
 		.descriptionsSection__grid-item {
 			display: grid;
 
 			grid-template-rows: 150px auto 1fr;
 			&:nth-child(3) {
-				min-width: 288px;
 				img {
 					position: relative;
-					right: 15px;
+					right: 9px;
 				}
 			}
 			&:nth-child(5) {
@@ -60,7 +62,7 @@
 			&:nth-child(6) {
 				img {
 					position: relative;
-					right: 11px;
+					right: 5px;
 				}
 			}
 			&:first-child {
@@ -78,10 +80,10 @@
 			&-subtitle {
 				justify-self: start;
 				margin-top: 28px;
-				font-size: 18px;
-				font-weight: 700;
+				font-size: $text-xl;
+				font-weight: $bold;
 				text-transform: uppercase;
-				line-height: 20px;
+				line-height: $text-lh-sm;
 				word-wrap: break-word;
 				letter-spacing: -0.02em;
 			}
@@ -89,10 +91,10 @@
 			&-text {
 				justify-self: stretch;
 				margin-top: 8px;
-				color: #878787;
-				font-size: 15px;
-				font-weight: 400;
-				line-height: 19px;
+				color: $text-color;
+				font-size: $text-md;
+				font-weight: $regular;
+				line-height: $text-lh-xs;
 				word-wrap: break-word;
 				letter-spacing: -0.01em;
 			}

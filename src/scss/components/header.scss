@@ -21,10 +21,10 @@
 	&__menu {
 		margin-top: 80px;
 		color: $primary;
-		font-size: 15px;
+		font-size: $text-md;
 		font-family: ProximaNova;
-		font-weight: 700;
-		line-height: 18px;
+		font-weight: $bold;
+		line-height: $heading-lh-sm;
 		word-wrap: break-word;
 	}
 	&__menu-list {

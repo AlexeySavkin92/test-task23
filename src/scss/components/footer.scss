@@ -1,5 +1,5 @@
 .footer {
-	background-color: #363636;
+	background-color: $bg-footer;
 	position: relative;
 
 	&__wrapper {
@@ -41,17 +41,17 @@
 		&-header-title {
 			padding: 11px 0 11px 16px;
 			& h3 {
-				font-size: 22px;
-				font-weight: 600;
-				line-height: 18px;
+				font-size: $heading-xs;
+				font-weight: $semi-bold;
+				line-height: $heading-lh-sm;
 				letter-spacing: 0.18px;
 			}
 
 			& h4 {
 				margin-top: 2px;
-				font-size: 14px;
-				font-weight: 400;
-				line-height: 18px;
+				font-size: $text-sm;
+				font-weight: $regular;
+				line-height: $heading-lh-sm;
 			}
 		}
 
@@ -64,8 +64,8 @@
 
 		&-item {
 			margin-top: 16px;
-			font-weight: 400;
-			line-height: 18px;
+			font-weight: $regular;
+			line-height: $heading-lh-sm;
 			&:last-child a {
 				margin-top: 0;
 				margin-left: 4px;
@@ -81,16 +81,16 @@
 			}
 
 			&-title {
-				font-weight: 400;
-				color: #999999;
-				font-size: 13px;
+				font-weight: $regular;
+				color: $news-color;
+				font-size: $small-lg;
 			}
 
 			&-link {
 				margin-top: 2px;
-				line-height: 18px;
-				color: #7050e5;
-				font-size: 13px;
+				line-height: $heading-lh-sm;
+				color: $secondary;
+				font-size: $small-lg;
 				text-decoration: none;
 				&:hover {
 					text-decoration: underline;
@@ -99,8 +99,8 @@
 
 			&-date {
 				margin-top: 6px;
-				color: #555555;
-				font-size: 11px;
+				color: $date-color;
+				font-size: $small-md;
 			}
 		}
 	}
@@ -114,9 +114,9 @@
 		.footer__navigation,
 		.footer__links,
 		.footer__contact-us {
-			font-size: 14px;
-			font-weight: 600;
-			line-height: 20px;
+			font-size: $text-sm;
+			font-weight: $semi-bold;
+			line-height: $text-lh-sm;
 
 			& li {
 				margin-top: 8px;
@@ -132,10 +132,9 @@
 
 			&-info {
 				margin-top: 20px;
-
-				font-size: 14px;
-				font-weight: 600;
-				line-height: 18px;
+				font-size: $text-sm;
+				font-weight: $semi-bold;
+				line-height: $heading-lh-sm;
 
 				& a {
 					padding-left: 15px;
@@ -153,9 +152,9 @@
 			}
 			h4 {
 				color: $accent;
-				font-size: 14px;
-				font-weight: 700;
-				line-height: 20px;
+				font-size: $text-sm;
+				font-weight: $bold;
+				line-height: $text-lh-sm;
 				word-wrap: break-word;
 				background-image: url("@img/hex-active.svg");
 				background-position: left;
@@ -167,16 +166,16 @@
 	}
 
 	&__copyright {
-		color: white;
-		font-size: 10px;
+		color: $primary;
+		font-size: $small-sm;
 		font-family: Raleway;
-		font-weight: 500;
+		font-weight: $medium;
 		text-transform: uppercase;
-		line-height: 20px;
+		line-height: $text-lh-sm;
 		word-wrap: break-word;
 		text-align: center;
 		padding: 1px 0 2px;
-		background-color: black;
+		background-color: $black;
 
 		&-image {
 			width: 9px;

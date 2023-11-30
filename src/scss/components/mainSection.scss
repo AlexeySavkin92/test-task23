@@ -38,23 +38,23 @@
 							padding-right: 25px;
 
 							& .main__section-title {
-								font-size: 55px;
-								font-weight: 700;
-								line-height: 55px;
+								font-size: $heading-lg;
+								font-weight: $bold;
+								line-height: $heading-lh-md;
 							}
 							& .main__section-description {
-								font-size: 16px;
-								font-weight: 600;
-								line-height: 30px;
+								font-size: $text-lg;
+								font-weight: $semi-bold;
+								line-height: $text-lh-xl;
 								margin-top: 12px;
 								max-width: 490px;
 							}
 							& .main__section-button {
 								cursor: pointer;
 								margin-top: 44px;
-								font-size: 14px;
-								font-weight: 700;
-								line-height: 45px;
+								font-size: $text-sm;
+								font-weight: $bold;
+								line-height: $small-lh-lg;
 								background-color: $accent;
 								padding: 4px 42px;
 								color: $primary;
@@ -115,9 +115,9 @@
 				align-items: center;
 				& .main__section-bottom-title {
 					font-family: ProximaNova;
-					font-weight: 700;
-					font-size: 15px;
-					line-height: 20px;
+					font-weight: $bold;
+					font-size: $text-md;
+					line-height: $text-lh-sm;
 				}
 				.main__section-scroll-image {
 					cursor: pointer;
