@@ -814,6 +814,8 @@ template {
   margin: 0 auto;
   padding-top: 114px;
   padding-bottom: 97px;
+  font-family: ProximaNova;
+  word-wrap: break-word;
 }
 
 .videoSection__info-block {
@@ -826,20 +828,16 @@ template {
 .videoSection__info-block-title {
   color: #7050e5;
   font-size: 40px;
-  font-family: ProximaNova;
   font-weight: 700;
   line-height: 55px;
-  word-wrap: break-word;
 }
 
 .videoSection__info-block-description {
   margin-top: 7px;
   color: #878787;
   font-size: 15px;
-  font-family: ProximaNova;
   font-weight: 400;
   line-height: 21px;
-  word-wrap: break-word;
   letter-spacing: -0.02em;
 }
 
@@ -847,10 +845,8 @@ template {
   margin-top: 30px;
   color: #ffffff;
   font-size: 14px;
-  font-family: ProximaNova;
   font-weight: 700;
   line-height: 18px;
-  word-wrap: break-word;
   background-color: #ff8b00;
   padding: 4px 40px;
   border-radius: 4px;
@@ -1067,7 +1063,7 @@ template {
 .formSection__input-group input[type=email]:focus,
 .formSection__input-group textarea:focus {
   border: 1px solid #ffffff;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .formSection__input-group input[type=text]::-webkit-input-placeholder, .formSection__input-group input[type=email]::-webkit-input-placeholder, .formSection__input-group textarea::-webkit-input-placeholder {
@@ -1357,7 +1353,7 @@ template {
 }
 
 .footer__copyright {
-  color: white;
+  color: #ffffff;
   font-size: 10px;
   font-family: Raleway;
   font-weight: 500;
@@ -1366,7 +1362,7 @@ template {
   word-wrap: break-word;
   text-align: center;
   padding: 1px 0 2px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 .footer__copyright-image {
