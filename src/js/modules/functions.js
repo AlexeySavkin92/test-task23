@@ -57,3 +57,18 @@ export function removeClassOutsideInput(event) {
 		}
 	}
 }
+
+export function toggleBurger() {
+	var menu = document.querySelector(".header__menu-burger");
+	var overlay = document.querySelector(".header__menu-burger-overlay");
+	menu.classList.toggle("show-menu");
+	overlay.classList.toggle("show-menu");
+}
+export function closeBurger() {
+	var menu = document.querySelector(".header__menu-burger");
+	var overlay = document.querySelector(".header__menu-burger-overlay");
+	if (menu.classList.contains("show-menu")) {
+		menu.classList.remove("show-menu");
+		overlay.classList.remove("show-menu");
+	}
+}

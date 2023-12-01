@@ -16,6 +16,12 @@
 			gap: 30px;
 			padding: 70px 50px;
 		}
+		@media (max-width: $tablet) {
+			flex-wrap: wrap;
+		}
+		@media (max-width: $tablet) {
+			justify-content: center;
+		}
 		&-item {
 			display: flex;
 			flex-direction: column;

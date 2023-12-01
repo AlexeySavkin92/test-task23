@@ -10,14 +10,20 @@
 		max-width: 1152px;
 		display: flex;
 		justify-content: space-between;
-		// @media (max-width: $desktop) {
-		// 	padding: 0 25px;
-		// }
+		@media (max-width: $tablet) {
+			align-items: center;
+			padding: 28px 50px;
+		}
 		.logo {
 			position: relative;
 			top: 32px;
 			width: 78px;
 			height: 100px;
+			@media (max-width: $tablet) {
+				width: 55px;
+				height: 72.3px;
+				top: 0;
+			}
 		}
 	}
 
@@ -31,6 +37,9 @@
 		word-wrap: break-word;
 		@media (max-width: $desktop) {
 			font-size: $small-lg;
+		}
+		@media (max-width: $tablet) {
+			display: none;
 		}
 	}
 	&__menu-list {
@@ -58,6 +67,70 @@
 			&:hover::after {
 				width: calc(100% + 8px);
 			}
+		}
+	}
+	&__menu-burger {
+		position: fixed;
+		top: 0;
+		right: -33%;
+		width: 33%;
+		height: 100vh;
+		background-color: $secondary;
+		color: $primary;
+		box-shadow: 0 0 2px $black;
+		transition: right 0.3s ease;
+		z-index: 9999;
+		padding: 25px 25px;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		&.show-menu {
+			right: 0%;
+		}
+		&-close {
+			align-self: flex-end;
+			font-size: $heading-sm;
+			cursor: pointer;
+			&:hover {
+				color: $accent;
+			}
+		}
+		&-list {
+			& li {
+				cursor: pointer;
+				margin-top: 15px;
+				&:hover {
+					color: $accent;
+				}
+			}
+			font-size: $text-lg;
+			font-family: ProximaNova;
+			font-weight: $semi-bold;
+		}
+		&-overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			display: none;
+			z-index: 998;
+			&.show-menu {
+				display: block;
+			}
+		}
+	}
+	// &__burger-active {
+	// 	display: none;
+	// }
+	&__burger-image {
+		display: none;
+		cursor: pointer;
+		//fill: black;
+
+		@media (max-width: $tablet) {
+			display: block;
 		}
 	}
 }

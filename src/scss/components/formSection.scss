@@ -1,7 +1,7 @@
 .formSection {
 	background-color: $bg-form;
 	position: relative;
-	z-index: 999;
+	z-index: 1;
 	&__wrapper {
 		color: $primary;
 		display: flex;
@@ -13,6 +13,9 @@
 		word-wrap: break-word;
 		@media (max-width: $desktop) {
 			padding: 50px 50px;
+		}
+		@media (max-width: $tablet) {
+			flex-direction: column;
 		}
 	}
 	&__left-block {
@@ -39,6 +42,12 @@
 			top: 0;
 			left: 0;
 			z-index: 0;
+			@media (max-width: $desktop) {
+				max-width: 600px;
+			}
+			@media (max-width: $tablet) {
+				max-width: 500px;
+			}
 		}
 	}
 	&__form-block {
@@ -58,6 +67,12 @@
 			z-index: 0;
 			@media (max-width: $desktop) {
 				right: 0;
+			}
+			@media (max-width: $laptop) {
+				max-width: 600px;
+			}
+			@media (max-width: $tablet) {
+				display: none;
 			}
 		}
 	}
