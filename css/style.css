@@ -1513,6 +1513,10 @@ template {
     font-size: 40px;
   }
 
+  .formSection__left-block-decor {
+    max-width: 600px;
+  }
+
   .formSection__form-block-decor {
     right: 0;
   }
@@ -1575,6 +1579,10 @@ template {
   .videoSection .video-popup__iframe {
     width: 600px;
     height: 337.5px;
+  }
+
+  .formSection__form-block-decor {
+    max-width: 600px;
   }
 
   .footer__wrapper {
