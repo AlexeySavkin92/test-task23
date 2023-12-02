@@ -21,7 +21,6 @@
 			//width: 100%;
 		}
 		@media (max-width: $laptop) {
-			//padding-left: 25px;
 			padding-right: 25px;
 		}
 		@media (max-width: $tablet) {
@@ -30,9 +29,15 @@
 		}
 		@media (max-width: $tabletXS) {
 			min-height: 600px;
-
+			height: clamp(487px, calc(100vh - 125px), 440px);
 			padding-top: 125px;
 		}
+
+		@media (max-width: $mobileXL) {
+			padding: 100px 25px 0;
+			height: clamp(681px, calc(100vh - 100px), 540px);
+		}
+
 		&-top {
 			width: 100%;
 			position: relative;
@@ -53,8 +58,9 @@
 						}
 					}
 					@media (max-width: $tabletXS) {
-						height: 400px;
+						height: 410px;
 					}
+
 					.swiper-slide {
 						max-width: 988px;
 						display: flex;
@@ -72,6 +78,9 @@
 						@media (max-width: $tabletXS) {
 							flex-direction: column-reverse;
 						}
+						@media (max-width: $tabletXS) {
+							margin-top: 55px;
+						}
 						& > .main__section-top-start-block {
 							max-width: 552px;
 							padding-right: 25px;
@@ -79,6 +88,7 @@
 								max-width: 500px;
 								padding-right: 0;
 							}
+
 							& .main__section-title {
 								font-size: $heading-lg;
 								font-weight: $bold;
@@ -96,6 +106,9 @@
 								line-height: $text-lh-xl;
 								margin-top: 12px;
 								max-width: 490px;
+								@media (max-width: $mobileXL) {
+									line-height: $text-lh-sm;
+								}
 							}
 							& .main__section-button {
 								cursor: pointer;
@@ -115,6 +128,9 @@
 								&:active {
 									transform: translateY(1px);
 								}
+								@media (max-width: $tabletXS) {
+									margin-top: 32px;
+								}
 							}
 						}
 						& > .main__section-top-image-block {
@@ -122,6 +138,9 @@
 							padding-top: 14px;
 							@media (max-width: $desktop) {
 								margin-right: 0px;
+							}
+							@media (max-width: $tabletXS) {
+								padding-top: 0;
 							}
 
 							& .main__section-image {
@@ -180,6 +199,9 @@
 			@media (max-width: $desktop) {
 				margin-right: 25px;
 			}
+			@media (max-width: $mobileXL) {
+				margin-right: 0;
+			}
 			&-container {
 				display: flex;
 				flex-direction: column;
@@ -189,6 +211,9 @@
 					font-weight: $bold;
 					font-size: $text-md;
 					line-height: $text-lh-sm;
+					@media (max-width: $mobileXL) {
+						font-size: $small-lg;
+					}
 				}
 				.main__section-scroll-image {
 					cursor: pointer;

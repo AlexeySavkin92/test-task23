@@ -14,6 +14,9 @@
 			align-items: center;
 			padding: 28px 50px;
 		}
+		@media (max-width: $tabletXS) {
+			padding: 28px 28px 0;
+		}
 		.logo {
 			position: relative;
 			top: 32px;
@@ -72,8 +75,8 @@
 	&__menu-burger {
 		position: fixed;
 		top: 0;
-		right: -33%;
-		width: 33%;
+		right: -40%;
+		width: 40%;
 		height: 100vh;
 		background-color: $secondary;
 		color: $primary;
@@ -88,6 +91,7 @@
 			right: 0%;
 		}
 		&-close {
+			color: $primary;
 			align-self: flex-end;
 			font-size: $heading-sm;
 			cursor: pointer;

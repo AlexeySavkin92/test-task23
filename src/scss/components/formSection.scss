@@ -40,6 +40,10 @@
 			@media (max-width: $desktop) {
 				padding-left: 0px;
 				font-size: $heading-md;
+				line-height: 40px;
+			}
+			@media (max-width: $mobileXL) {
+				padding-top: 0;
 			}
 		}
 		&-decor {
@@ -61,6 +65,9 @@
 		z-index: 1;
 		@media (max-width: $tablet) {
 			max-width: none;
+		}
+		@media (max-width: $mobileXL) {
+			margin-top: 48px;
 		}
 		&-title {
 			font-size: $heading-sm;

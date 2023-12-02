@@ -18,14 +18,21 @@
 			flex-direction: column;
 			align-items: center;
 		}
+		@media (max-width: $mobileXL) {
+			padding: 60px 38px 260px;
+		}
 		&-logo {
 			position: absolute;
 			right: 32px;
 			bottom: 56px;
 			@media (max-width: $desktop) {
 				width: 60px;
-				right: 20px;
 				bottom: 40px;
+			}
+			@media (max-width: $mobileXL) {
+				width: 88px;
+				bottom: 175px;
+				right: calc(50% - 44px);
 			}
 		}
 	}
@@ -222,7 +229,12 @@
 		word-wrap: break-word;
 		text-align: center;
 		padding: 1px 0 2px;
-		background-color: $black;
+		background-color: $bg-copyright;
+		@media (max-width: $mobileXL) {
+			font-size: $small-xs;
+			padding: 37px 41px 38px 38px;
+			opacity: 80%;
+		}
 
 		&-image {
 			width: 9px;
@@ -232,6 +244,10 @@
 			background-size: contain;
 			background-position: left;
 			display: inline-block;
+			@media (max-width: $mobileXL) {
+				width: 6px;
+				padding-top: 0;
+			}
 		}
 	}
 }

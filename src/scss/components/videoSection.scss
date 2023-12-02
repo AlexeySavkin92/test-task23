@@ -41,6 +41,9 @@
 			font-size: $heading-md;
 			font-weight: $bold;
 			line-height: $heading-lh-md;
+			@media (max-width: $mobileXL) {
+				font-size: $heading-sm;
+			}
 		}
 
 		&-description {
@@ -96,7 +99,7 @@
 
 		.videoSection__custom-button {
 			position: absolute;
-			backdrop-filter: blur(80px);
+			backdrop-filter: blur(30px);
 			border-radius: 50%;
 			top: 50%;
 			left: 50%;
@@ -106,6 +109,8 @@
 		}
 
 		.videoSection__iframe {
+			filter: blur(2px) brightness(0.5);
+
 			position: absolute;
 			top: 0;
 			left: 0;
