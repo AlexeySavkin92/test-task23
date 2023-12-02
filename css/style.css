@@ -980,6 +980,33 @@ template {
   height: 100%;
 }
 
+.videoSection__video-block-button {
+  display: none;
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  background-color: #ff8b00;
+  padding: 4px 40px;
+  border-radius: 4px;
+  width: 171px;
+  height: 44px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.videoSection__video-block-button:hover {
+  background-color: #f08300;
+}
+
+.videoSection__video-block-button:active {
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
 .videoSection .videoSection__video-popup {
   display: none;
   position: fixed;
@@ -1049,6 +1076,7 @@ template {
   font-weight: 700;
   line-height: 55px;
   z-index: 1;
+  text-wrap: nowrap;
 }
 
 .formSection__left-block-decor {
@@ -1566,6 +1594,10 @@ template {
     font-size: 50px;
   }
 
+  .descriptionsSection__title-block .descriptionsSection__title {
+    font-size: 34px;
+  }
+
   .descriptionsSection__grid-container {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
@@ -1667,9 +1699,18 @@ template {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .videoSection__video-block {
+    margin-top: 28px;
+  }
+
   .videoSection .video-popup__iframe {
     width: 600px;
     height: 337.5px;
+  }
+
+  .formSection__wrapper {
+    position: relative;
+    overflow: hidden;
   }
 
   .formSection__form-block-decor {
@@ -1729,6 +1770,19 @@ template {
     display: block;
   }
 
+  .main__section {
+    padding-top: 100px;
+    height: clamp(487px, 100vh - 100px, 440px);
+  }
+
+  .main__section-top .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) {
+    display: none;
+  }
+
+  .main__section-top .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) {
+    display: none;
+  }
+
   .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-image-block .main__section-image {
     width: 100px;
   }
@@ -1748,6 +1802,32 @@ template {
             justify-content: center;
   }
 
+  .videoSection__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .videoSection__info-block {
+    max-width: 400px;
+    padding: 0;
+  }
+
+  .videoSection__info-block button {
+    display: none;
+  }
+
+  .videoSection__video-block {
+    width: 400px;
+    height: 245.3px;
+  }
+
+  .videoSection__video-block-button {
+    display: block;
+    margin-top: 40px;
+  }
+
   .formSection__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1756,10 +1836,75 @@ template {
   }
 
   .formSection__left-block-decor {
-    max-width: 500px;
+    max-width: none;
+  }
+
+  .formSection__form-block {
+    max-width: none;
   }
 
   .formSection__form-block-decor {
     display: none;
+  }
+
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__columns {
+    margin-top: 60px;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .footer__columns .footer__navigation {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+
+  .footer__columns .footer__links {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media (max-width: 568px) {
+  .main__section {
+    min-height: 600px;
+    padding-top: 125px;
+  }
+
+  .main__section-top .swiper-container .swiper-wrapper {
+    height: 400px;
+  }
+
+  .main__section-top .swiper-container .swiper-wrapper .swiper-slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-image-block .main__section-image {
+    margin-right: 0;
+  }
+
+  .descriptionsSection__grid-container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .formSection__input-group_half {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
   }
 }
