@@ -514,8 +514,12 @@ template {
   color: #ffffff;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  font-size: 28px;
+  font-size: 30px;
+  font-weight: 700;
   cursor: pointer;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .header__menu-burger-close:hover {
@@ -1712,7 +1716,7 @@ template {
   }
 
   .videoSection__video-block {
-    margin-top: 28px;
+    margin-top: 31px;
   }
 
   .videoSection .video-popup__iframe {
@@ -1941,6 +1945,10 @@ template {
     gap: 0;
   }
 
+  .formSection__input-group_full {
+    margin-top: -8px;
+  }
+
   .formSection__button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -2069,6 +2077,7 @@ template {
 @media (max-width: 375px) {
   .main__section {
     padding-top: 82.39px;
+    height: clamp(733px, 100vh - 82.39px, 540px);
   }
 
   .main__section-top .swiper-container .swiper-wrapper {
@@ -2137,6 +2146,7 @@ template {
 
   .videoSection__info-block-description {
     margin-top: 16px;
+    line-height: 21px;
   }
 
   .videoSection__video-block .videoSection__custom-button img {
