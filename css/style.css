@@ -559,6 +559,7 @@ template {
 
 .main {
   margin: 0 auto;
+  min-height: 789px;
 }
 
 .main__section {
@@ -825,8 +826,8 @@ template {
 .descriptionsSection__grid-container .descriptionsSection__grid-item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 150px auto 1fr;
-  grid-template-rows: 150px auto 1fr;
+  -ms-grid-rows: auto auto 1fr;
+  grid-template-rows: auto auto 1fr;
 }
 
 .descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(3) img {
@@ -1231,6 +1232,7 @@ template {
   background-color: #ff8b00;
   line-height: 18px;
   font-weight: 700;
+  font-size: 14px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -1534,6 +1536,12 @@ template {
   font-style: normal;
 }
 
+@media (min-width: 375px) {
+  .footer__copyright {
+    text-wrap: nowrap;
+  }
+}
+
 @media (max-width: 1440px) {
   .descriptionsSection__wrapper {
     padding: 70px 50px;
@@ -1564,6 +1572,7 @@ template {
 
   .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-title {
     font-size: 32px;
+    line-height: 40px;
   }
 
   .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-image-block {
@@ -1822,8 +1831,13 @@ template {
   }
 
   .videoSection__video-block {
-    width: 400px;
-    height: 245.3px;
+    max-width: 400px;
+    max-height: 245.3px;
+  }
+
+  .videoSection__video-block .videoSection__custom-button img {
+    width: 60px;
+    height: 60px;
   }
 
   .videoSection__video-block-button {
@@ -1844,6 +1858,7 @@ template {
 
   .formSection__form-block {
     max-width: none;
+    margin-top: 48px;
   }
 
   .formSection__form-block-decor {
@@ -1897,10 +1912,7 @@ template {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-
-  .main__section-top .swiper-container .swiper-wrapper .swiper-slide {
-    margin-top: 55px;
+    margin-top: 0;
   }
 
   .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-button {
@@ -1918,6 +1930,7 @@ template {
   .descriptionsSection__grid-container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 60px;
   }
 
   .formSection__input-group_half {
@@ -1927,12 +1940,27 @@ template {
             flex-direction: column;
     gap: 0;
   }
+
+  .formSection__button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 @media (max-width: 475px) {
+  .header__container .logo {
+    width: 39px;
+    height: 50px;
+  }
+
   .main__section {
-    padding: 100px 25px 0;
+    padding: 100px 28px 0;
     height: clamp(681px, 100vh - 100px, 540px);
+  }
+
+  .main__section-top .swiper-container .swiper-wrapper .swiper-slide {
+    margin-top: 55px;
   }
 
   .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-description {
@@ -1947,16 +1975,54 @@ template {
     font-size: 13px;
   }
 
+  .descriptionsSection__wrapper {
+    padding: 62px 52px 48px;
+  }
+
+  .descriptionsSection__title-block {
+    margin-bottom: 40px;
+    padding-right: 42px;
+  }
+
+  .videoSection__wrapper {
+    padding: 100px 28px 97px;
+  }
+
+  .videoSection__info-block {
+    max-width: none;
+  }
+
   .videoSection__info-block-title {
     font-size: 28px;
   }
 
-  .formSection__left-block-title {
-    padding-top: 0;
+  .videoSection__video-block {
+    max-width: 319px;
+    max-height: 196px;
   }
 
-  .formSection__form-block {
-    margin-top: 48px;
+  .videoSection__video-block .videoSection__custom-button img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .formSection__wrapper {
+    padding: 40px 36px 40px 28px;
+  }
+
+  .formSection__left-block-title {
+    padding-top: 0;
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .formSection__form-block-title {
+    font-size: 20px;
+    line-height: 24.36px;
+  }
+
+  .formSection__input-group label {
+    line-height: normal;
   }
 
   .footer__wrapper {
@@ -1969,6 +2035,25 @@ template {
     right: calc(50% - 44px);
   }
 
+  .footer__columns {
+    padding: 0 51px;
+    width: auto;
+  }
+
+  .footer__columns .footer__navigation li,
+  .footer__columns .footer__links li,
+  .footer__columns .footer__contact-us li {
+    margin-top: 6px;
+    text-wrap: wrap;
+    line-height: 18px;
+  }
+
+  .footer__columns .footer__navigation-list,
+  .footer__columns .footer__links-list,
+  .footer__columns .footer__contact-us-list {
+    margin-top: 12px;
+  }
+
   .footer__copyright {
     font-size: 8px;
     padding: 37px 41px 38px 38px;
@@ -1978,5 +2063,90 @@ template {
   .footer__copyright-image {
     width: 6px;
     padding-top: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .main__section {
+    padding-top: 82.39px;
+  }
+
+  .main__section-top .swiper-container .swiper-wrapper {
+    height: 430px;
+  }
+
+  .main__section-top .swiper-container .swiper-wrapper .swiper-slide {
+    gap: 56px;
+  }
+
+  .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-description {
+    margin-top: 16px;
+  }
+
+  .statisticsSection__container {
+    gap: 68px;
+    padding: 80px 28px 100px;
+  }
+
+  .statisticsSection__value {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .statisticsSection__description {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 12px;
+  }
+
+  .descriptionsSection__title-block .descriptionsSection__image-decor {
+    top: -15px;
+  }
+
+  .descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(2) img {
+    width: 106px;
+  }
+
+  .descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(3) img {
+    width: 100px;
+    right: 0;
+  }
+
+  .descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(5) img {
+    left: 0;
+  }
+
+  .descriptionsSection__grid-container .descriptionsSection__grid-item:nth-child(4) img {
+    width: 100px;
+    right: 0;
+  }
+
+  .descriptionsSection__grid-container .descriptionsSection__grid-item:first-child img {
+    width: 106px;
+    right: 0;
+  }
+
+  .descriptionsSection__grid-container .descriptionsSection__grid-item-text {
+    margin-top: 16px;
+  }
+
+  .videoSection__info-block-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .videoSection__info-block-description {
+    margin-top: 16px;
+  }
+
+  .videoSection__video-block .videoSection__custom-button img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .footer__columns {
+    padding: 0;
+    margin-left: 51px;
+    margin-right: 51px;
   }
 }
