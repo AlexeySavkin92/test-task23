@@ -27,6 +27,9 @@
 			@media (max-width: $desktop) {
 				font-size: 50px;
 			}
+			@media (max-width: $desktop) {
+				font-size: 34px;
+			}
 		}
 
 		& .descriptionsSection__image-decor {
@@ -49,6 +52,10 @@
 			// justify-self: center;
 			// gap: 0 300px;
 		}
+		@media (max-width: $tabletXS) {
+			grid-template-columns: 1fr;
+		}
+
 		.descriptionsSection__grid-item {
 			display: grid;
 			// @media (max-width: $laptop) {

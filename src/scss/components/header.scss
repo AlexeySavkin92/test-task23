@@ -121,13 +121,10 @@
 			}
 		}
 	}
-	// &__burger-active {
-	// 	display: none;
-	// }
+
 	&__burger-image {
 		display: none;
 		cursor: pointer;
-		//fill: black;
 
 		@media (max-width: $tablet) {
 			display: block;
