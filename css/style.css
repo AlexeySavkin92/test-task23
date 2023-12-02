@@ -1359,8 +1359,8 @@ template {
   padding-left: 50px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[3];
-  grid-template-columns: repeat(3, auto);
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
   gap: 132px;
   font-family: ProximaNova;
   text-transform: uppercase;
@@ -1682,10 +1682,10 @@ template {
   }
 
   .footer__columns {
-    -ms-grid-columns: (auto)[2];
-    grid-template-columns: repeat(2, auto);
-    -ms-grid-rows: (auto)[2];
-    grid-template-rows: repeat(2, auto);
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
   }
 
   .footer__columns .footer__navigation {
