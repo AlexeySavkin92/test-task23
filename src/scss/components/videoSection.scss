@@ -18,9 +18,16 @@
 			flex-direction: column;
 			//	align-items: flex-start;
 		}
+		@media (max-width: $mobileXL) {
+			padding: 100px 28px 97px;
+		}
 	}
 
 	&__info-block {
+		padding-left: 23px;
+		padding-right: 124px;
+		padding-top: 95px;
+		max-width: 455px;
 		@media (max-width: $desktop) {
 			padding-top: 0;
 			padding-right: 50px;
@@ -30,12 +37,9 @@
 			max-width: 400px;
 			padding: 0;
 		}
-
-		padding-left: 23px;
-		padding-right: 124px;
-		padding-top: 95px;
-		max-width: 455px;
-
+		@media (max-width: $mobileXL) {
+			max-width: none;
+		}
 		&-title {
 			color: $secondary;
 			font-size: $heading-md;
@@ -43,6 +47,10 @@
 			line-height: $heading-lh-md;
 			@media (max-width: $mobileXL) {
 				font-size: $heading-sm;
+			}
+			@media (max-width: $mobileM) {
+				font-size: 24px;
+				line-height: 32px;
 			}
 		}
 
@@ -53,6 +61,9 @@
 			font-weight: $regular;
 			line-height: $text-lh-md;
 			letter-spacing: -0.02em;
+			@media (max-width: $mobileM) {
+				margin-top: 16px;
+			}
 		}
 
 		& button {
@@ -93,8 +104,12 @@
 			margin-top: 28px;
 		}
 		@media (max-width: $tablet) {
-			width: 400px;
-			height: 245.3px;
+			max-width: 400px;
+			max-height: 245.3px;
+		}
+		@media (max-width: $mobileXL) {
+			max-width: 319px;
+			max-height: 196px;
 		}
 
 		.videoSection__custom-button {
@@ -106,6 +121,20 @@
 			transform: translate(-50%, -50%);
 			z-index: 1;
 			cursor: pointer;
+			& img {
+				@media (max-width: $tablet) {
+					width: 60px;
+					height: 60px;
+				}
+				@media (max-width: $mobileXL) {
+					width: 50px;
+					height: 50px;
+				}
+				@media (max-width: $mobileM) {
+					width: 34px;
+					height: 34px;
+				}
+			}
 		}
 
 		.videoSection__iframe {

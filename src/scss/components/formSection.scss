@@ -21,6 +21,9 @@
 			position: relative;
 			overflow: hidden;
 		}
+		@media (max-width: $mobileXL) {
+			padding: 40px 36px 40px 28px;
+		}
 	}
 	&__left-block {
 		padding-right: 100px;
@@ -44,6 +47,8 @@
 			}
 			@media (max-width: $mobileXL) {
 				padding-top: 0;
+				font-size: 34px;
+				line-height: 40px;
 			}
 		}
 		&-decor {
@@ -65,15 +70,19 @@
 		z-index: 1;
 		@media (max-width: $tablet) {
 			max-width: none;
+			margin-top: 48px;
 		}
 		@media (max-width: $mobileXL) {
-			margin-top: 48px;
 		}
 		&-title {
 			font-size: $heading-sm;
 			font-weight: $bold;
 			letter-spacing: -0.03em;
 			line-height: 41px;
+			@media (max-width: $mobileXL) {
+				font-size: $text-lh-sm;
+				line-height: 24.36px;
+			}
 		}
 		&-decor {
 			position: absolute;
@@ -123,6 +132,9 @@
 			font-size: $small-lg;
 			font-weight: $semi-bold;
 			line-height: $text-lh-xs;
+			@media (max-width: $mobileXL) {
+				line-height: normal;
+			}
 		}
 		input[type="text"],
 		input[type="email"],
@@ -166,12 +178,16 @@
 		background-color: $accent;
 		line-height: $heading-lh-sm;
 		font-weight: $bold;
+		font-size: $text-sm;
 		transition: 0.2s;
 		&:hover {
 			background-color: darken($accent, 3%);
 		}
 		&:active {
 			transform: translateY(1px);
+		}
+		@media (max-width: $tabletXS) {
+			align-self: center;
 		}
 	}
 	.chek-valid input:invalid {

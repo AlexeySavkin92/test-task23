@@ -22,6 +22,10 @@
 		@media (max-width: $tablet) {
 			justify-content: center;
 		}
+		@media (max-width: $mobileM) {
+			gap: 68px;
+			padding: 80px 28px 100px;
+		}
 		&-item {
 			display: flex;
 			flex-direction: column;
@@ -50,6 +54,10 @@
 		@media (max-width: $laptop) {
 			font-size: $small-lh-lg;
 		}
+		@media (max-width: $mobileM) {
+			font-size: 42px;
+			line-height: 50px;
+		}
 	}
 	&__description {
 		margin-top: 14px;
@@ -62,6 +70,11 @@
 		@media (max-width: $laptop) {
 			margin-top: 0;
 			text-wrap: wrap;
+		}
+		@media (max-width: $mobileM) {
+			font-size: $small-lg;
+			line-height: $text-lg;
+			margin-top: 12px;
 		}
 	}
 }

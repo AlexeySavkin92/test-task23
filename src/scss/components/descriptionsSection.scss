@@ -12,6 +12,12 @@
 		@media (max-width: $desktopS) {
 			padding: 70px 50px;
 		}
+		@media (max-width: $mobileXL) {
+			padding: 62px 52px 48px;
+		}
+		// @media (max-width: $mobileM) {
+		// 	padding: 78px 52px 48px;
+		// }
 	}
 
 	&__title-block {
@@ -19,6 +25,15 @@
 		padding-right: 54px;
 		margin-bottom: 70px;
 		position: relative;
+		@media (max-width: $mobileXL) {
+			margin-bottom: 40px;
+			padding-right: 42px;
+		}
+		// @media (max-width: $mobileM) {
+		// 	padding-right: 0;
+		// 	text-align: center;
+		// 	margin-bottom: 26px;
+		// }
 
 		& .descriptionsSection__title {
 			line-height: $heading-lh-xl;
@@ -36,6 +51,9 @@
 			position: absolute;
 			top: -25px;
 			right: -10px;
+			@media (max-width: $mobileM) {
+				top: -15px;
+			}
 		}
 	}
 	&__grid-container {
@@ -44,7 +62,6 @@
 		gap: 40px 100px;
 		@media (max-width: $desktop) {
 			grid-template-columns: repeat(3, 1fr);
-
 			gap: 30px 60px;
 		}
 		@media (max-width: $laptop) {
@@ -54,6 +71,7 @@
 		}
 		@media (max-width: $tabletXS) {
 			grid-template-columns: 1fr;
+			gap: 60px;
 		}
 
 		.descriptionsSection__grid-item {
@@ -62,23 +80,41 @@
 			// 	max-width: 300px;
 			// }
 
-			grid-template-rows: 150px auto 1fr;
+			grid-template-rows: auto auto 1fr;
+			&:nth-child(2) {
+				img {
+					@media (max-width: $mobileM) {
+						width: 106px;
+					}
+				}
+			}
 			&:nth-child(3) {
 				img {
 					position: relative;
 					right: 9px;
+					@media (max-width: $mobileM) {
+						width: 100px;
+						right: 0;
+					}
 				}
 			}
 			&:nth-child(5) {
 				img {
 					position: relative;
 					left: 10px;
+					@media (max-width: $mobileM) {
+						left: 0;
+					}
 				}
 			}
 			&:nth-child(4) {
 				img {
 					position: relative;
 					right: 13px;
+					@media (max-width: $mobileM) {
+						width: 100px;
+						right: 0;
+					}
 				}
 			}
 
@@ -92,6 +128,10 @@
 				img {
 					position: relative;
 					right: 25px;
+					@media (max-width: $mobileM) {
+						width: 106px;
+						right: 0;
+					}
 				}
 			}
 
@@ -120,6 +160,9 @@
 				line-height: $text-lh-xs;
 				word-wrap: break-word;
 				letter-spacing: -0.01em;
+				@media (max-width: $mobileM) {
+					margin-top: 16px;
+				}
 			}
 		}
 	}
