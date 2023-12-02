@@ -1964,7 +1964,7 @@ template {
 
   .main__section {
     padding: 100px 28px 0;
-    height: clamp(681px, 100vh - 100px, 540px);
+    height: clamp(600px, 100vh - 100px, 740px);
   }
 
   .main__section-top .swiper-container .swiper-wrapper .swiper-slide {
@@ -2077,7 +2077,7 @@ template {
 @media (max-width: 375px) {
   .main__section {
     padding-top: 82.39px;
-    height: clamp(733px, 100vh - 82.39px, 540px);
+    height: clamp(650px, 100vh - 82.39px, 750px);
   }
 
   .main__section-top .swiper-container .swiper-wrapper {
