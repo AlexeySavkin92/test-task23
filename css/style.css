@@ -484,8 +484,8 @@ template {
 .header__menu-burger {
   position: fixed;
   top: 0;
-  right: -33%;
-  width: 33%;
+  right: -40%;
+  width: 40%;
   height: 100vh;
   background-color: #7050e5;
   color: #ffffff;
@@ -511,6 +511,7 @@ template {
 }
 
 .header__menu-burger-close {
+  color: #ffffff;
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-size: 28px;
@@ -1488,7 +1489,7 @@ template {
   word-wrap: break-word;
   text-align: center;
   padding: 1px 0 2px;
-  background-color: rgb(0, 0, 0);
+  background-color: #252525;
 }
 
 .footer__copyright-image {
@@ -1636,6 +1637,7 @@ template {
   .formSection__left-block-title {
     padding-left: 0px;
     font-size: 40px;
+    line-height: 40px;
   }
 
   .formSection__left-block-decor {
@@ -1648,7 +1650,6 @@ template {
 
   .footer__wrapper-logo {
     width: 60px;
-    right: 20px;
     bottom: 40px;
   }
 
@@ -1934,7 +1935,48 @@ template {
     height: clamp(681px, 100vh - 100px, 540px);
   }
 
+  .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-start-block .main__section-description {
+    line-height: 20px;
+  }
+
   .main__section-bottom {
     margin-right: 0;
+  }
+
+  .main__section-bottom-container .main__section-bottom-title {
+    font-size: 13px;
+  }
+
+  .videoSection__info-block-title {
+    font-size: 28px;
+  }
+
+  .formSection__left-block-title {
+    padding-top: 0;
+  }
+
+  .formSection__form-block {
+    margin-top: 48px;
+  }
+
+  .footer__wrapper {
+    padding: 60px 38px 260px;
+  }
+
+  .footer__wrapper-logo {
+    width: 88px;
+    bottom: 175px;
+    right: calc(50% - 44px);
+  }
+
+  .footer__copyright {
+    font-size: 8px;
+    padding: 37px 41px 38px 38px;
+    opacity: 80%;
+  }
+
+  .footer__copyright-image {
+    width: 6px;
+    padding-top: 0;
   }
 }
