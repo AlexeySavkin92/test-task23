@@ -1059,6 +1059,7 @@ template {
 .formSection {
   background-color: #232323;
   position: relative;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -1094,9 +1095,23 @@ template {
 
 .formSection__left-block-decor {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
+  width: 746.86px;
+  height: 757.17px;
+  top: 598.92px;
+  left: 108.49px;
+  -webkit-transform: rotate(-122.79deg);
+      -ms-transform: rotate(-122.79deg);
+          transform: rotate(-122.79deg);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  opacity: 0.33;
+  background: linear-gradient(12deg, #f101bf 0%, #0066ff 100%);
+  -webkit-box-shadow: 250px 250px 250px;
+          box-shadow: 250px 250px 250px;
+  border-radius: 373.43px;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
 }
 
 .formSection__form-block {
@@ -1116,9 +1131,23 @@ template {
 
 .formSection__form-block-decor {
   position: absolute;
-  bottom: 0;
-  right: 2%;
-  z-index: 0;
+  width: 472.1px;
+  height: 478.61px;
+  top: 389px;
+  left: 937.19px;
+  -webkit-transform: rotate(5.78deg);
+      -ms-transform: rotate(5.78deg);
+          transform: rotate(5.78deg);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  opacity: 0.3;
+  background: linear-gradient(12deg, #f101bf 0%, #0066ff 100%);
+  -webkit-box-shadow: 250px 250px 250px;
+          box-shadow: 250px 250px 250px;
+  border-radius: 236.05px;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
 }
 
 .formSection__form {
@@ -1654,14 +1683,6 @@ template {
     line-height: 40px;
   }
 
-  .formSection__left-block-decor {
-    max-width: 600px;
-  }
-
-  .formSection__form-block-decor {
-    right: 0;
-  }
-
   .footer__wrapper-logo {
     width: 60px;
     bottom: 40px;
@@ -1732,10 +1753,6 @@ template {
   .formSection__wrapper {
     position: relative;
     overflow: hidden;
-  }
-
-  .formSection__form-block-decor {
-    max-width: 600px;
   }
 
   .footer__wrapper {
@@ -1859,16 +1876,16 @@ template {
   }
 
   .formSection__left-block-decor {
-    max-width: none;
+    -webkit-transform: rotate(-150deg);
+        -ms-transform: rotate(-150deg);
+            transform: rotate(-150deg);
+    top: 585.16px;
+    left: 161.8px;
   }
 
   .formSection__form-block {
     max-width: none;
     margin-top: 48px;
-  }
-
-  .formSection__form-block-decor {
-    display: none;
   }
 
   .footer__wrapper {
