@@ -66,10 +66,10 @@
 		text-transform: uppercase;
 		text-align: center;
 		letter-spacing: -0.02em;
-		text-wrap: nowrap;
+		white-space: nowrap;
 		@media (max-width: $laptop) {
 			margin-top: 0;
-			text-wrap: wrap;
+			white-space: normal;
 		}
 		@media (max-width: $mobileM) {
 			font-size: $small-lg;

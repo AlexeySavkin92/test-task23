@@ -1,6 +1,7 @@
 .formSection {
 	background-color: $bg-form;
 	position: relative;
+	overflow: hidden;
 	z-index: 1;
 	&__wrapper {
 		color: $primary;
@@ -39,7 +40,7 @@
 			font-weight: $bold;
 			line-height: $heading-lh-md;
 			z-index: 1;
-			text-wrap: nowrap;
+			white-space: nowrap;
 			@media (max-width: $desktop) {
 				padding-left: 0px;
 				font-size: $heading-md;
@@ -53,14 +54,21 @@
 		}
 		&-decor {
 			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 0;
-			@media (max-width: $desktop) {
-				max-width: 600px;
-			}
+			width: 746.86px;
+			height: 757.17px;
+			top: 598.92px;
+			left: 108.49px;
+			transform: rotate(-122.79deg);
+			transform-origin: 0 0;
+			opacity: 0.33;
+			background: linear-gradient(12deg, #f101bf 0%, #0066ff 100%);
+			box-shadow: 250px 250px 250px;
+			border-radius: 373.43px;
+			filter: blur(100px);
 			@media (max-width: $tablet) {
-				max-width: none;
+				transform: rotate(-150deg);
+				top: 585.16px;
+				left: 161.8px;
 			}
 		}
 	}
@@ -86,18 +94,17 @@
 		}
 		&-decor {
 			position: absolute;
-			bottom: 0;
-			right: 2%;
-			z-index: 0;
-			@media (max-width: $desktop) {
-				right: 0;
-			}
-			@media (max-width: $laptop) {
-				max-width: 600px;
-			}
-			@media (max-width: $tablet) {
-				display: none;
-			}
+			width: 472.1px;
+			height: 478.61px;
+			top: 389px;
+			left: 937.19px;
+			transform: rotate(5.78deg);
+			transform-origin: 0 0;
+			opacity: 0.3;
+			background: linear-gradient(12deg, #f101bf 0%, #0066ff 100%);
+			box-shadow: 250px 250px 250px;
+			border-radius: 236.05px;
+			filter: blur(100px);
 		}
 	}
 	&__form {
@@ -126,6 +133,9 @@
 		}
 		&_full {
 			margin-top: 0px;
+			@media (max-width: $tabletXS) {
+				margin-top: -8px;
+			}
 		}
 		label {
 			padding-left: 4px;

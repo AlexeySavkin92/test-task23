@@ -38,3 +38,19 @@ slideButtons.forEach((button, index) => {
 		swiper.slideTo(slideIndex);
 	});
 });
+
+function updateSwiperDirection() {
+	if (window.innerWidth <= 768) {
+		swiper.allowTouchMove = true;
+	} else {
+		swiper.allowTouchMove = false;
+	}
+
+	swiper.update();
+}
+
+window.addEventListener("resize", () => {
+	updateSwiperDirection();
+});
+
+updateSwiperDirection();

@@ -97,8 +97,10 @@
 		&-close {
 			color: $primary;
 			align-self: flex-end;
-			font-size: $heading-sm;
+			font-size: $text-lh-xl;
+			font-weight: $bold;
 			cursor: pointer;
+			transform: rotate(45deg);
 			&:hover {
 				color: $accent;
 			}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+	<!-- prettier-ignore-start -->
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/style.min.css" />
@@ -16,6 +17,8 @@
 		sizes="16x16"
 		href="img/favicon-16x16.png"
 	/>
+	<!-- prettier-ignore-end -->
+
 	<title>Salt</title>
 </head>
 
@@ -24,7 +27,11 @@
 	<div class="header__wrapper">
 		<div class="header__container">
 			<a href="index.html"
-				><img class="logo" src="img/Logo.png" alt="logo to update page"
+				><img
+					class="logo"
+					src="img/Logo1x.png"
+					srcset="img/Logo2x.png 2x"
+					alt="logo to update page"
 			/></a>
 			<nav class="header__menu">
 				<ul class="header__menu-list">
@@ -41,13 +48,8 @@
 				src="img/burger.svg"
 				alt="burger menu"
 			/>
-			<!-- <img
-				class="header__burger-active"
-				src="img/burger-active.svg"
-				alt="burger hover"
-			/> -->
 			<nav class="header__menu-burger">
-				<div class="header__menu-burger-close">✖</div>
+				<div class="header__menu-burger-close">+</div>
 				<ul class="header__menu-burger-list">
 					<li><a href="#"></a>HOME</li>
 					<li><a href="#"></a>PRODUCTS</li>
@@ -72,8 +74,8 @@
 						<div class="main__section-top-start-block">
 							<h2 class="main__section-title">Device Authentication</h2>
 							<p class="main__section-description">
-								SALT Group is a world leader in authen&shytication and security.
-								We have<br />
+								SALT Group is a world leader in authen&shy;tication and
+								security. We have<br />
 								a range of services to improve user authentication.<br />
 								Discover the possibilities with SALT.
 							</p>
@@ -184,6 +186,7 @@
 				<img
 					class="descriptionsSection__grid-item-image"
 					src="img/device.png"
+					srcset="img/device2x.png 2x"
 					alt="authentication-1"
 				/>
 				<h3 class="descriptionsSection__grid-item-subtitle">
@@ -200,6 +203,7 @@
 				<img
 					class="descriptionsSection__grid-item-image"
 					src="img/user.png"
+					srcset="img/user2x.png 2x"
 					alt="authentication-2"
 				/>
 				<h3 class="descriptionsSection__grid-item-subtitle">
@@ -214,6 +218,7 @@
 				<img
 					class="descriptionsSection__grid-item-image"
 					src="img/transaction.png"
+					srcset="img/transaction2x.png 2x"
 					alt="authentication-3"
 				/>
 				<h3 class="descriptionsSection__grid-item-subtitle">
@@ -230,6 +235,7 @@
 				<img
 					class="descriptionsSection__grid-item-image"
 					src="img/contemporary.png"
+					srcset="img/contemporary2x.png 2x"
 					alt="authentication-4"
 				/>
 				<h3 class="descriptionsSection__grid-item-subtitle">
@@ -249,6 +255,7 @@
 				<img
 					class="descriptionsSection__grid-item-image"
 					src="img/hsm.png"
+					srcset="img/hsm2x.png 2x"
 					alt="hsm"
 				/>
 				<h3 class="descriptionsSection__grid-item-subtitle">HSM Solutions</h3>
@@ -262,6 +269,7 @@
 				<img
 					class="descriptionsSection__grid-item-image"
 					src="img/cloud.png"
+					srcset="img/cloud2x.png 2x"
 					alt="cloud"
 				/>
 				<h3 class="descriptionsSection__grid-item-subtitle">
@@ -299,7 +307,6 @@
 				id="video"
 				src="https://www.youtube.com/embed/__-vp0g_BhA?si=wr9g0o6PIxE_bUTf&amp;controls=0"
 				title="YouTube video player"
-				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				allowfullscreen
 			></iframe>
@@ -311,9 +318,8 @@
 			<div class="video-popup__content">
 				<iframe
 					class="video-popup__iframe"
-					src=""
+					src="https://www.youtube.com/embed/__-vp0g_BhA?si=wr9g0o6PIxE_bUTf&amp;controls=0"
 					title="YouTube video player"
-					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					allowfullscreen
 				></iframe>
@@ -329,11 +335,13 @@
 				Ready<br />
 				to get started?
 			</h2>
-			<img
+			<div class="formSection__left-block-decor"></div>
+
+			<!-- <img
 				class="formSection__left-block-decor"
 				src="img/bg-decor-left.png"
 				alt="bg-decor"
-			/>
+			/> -->
 		</div>
 		<div class="formSection__form-block">
 			<h3 class="formSection__form-block-title">Contact us</h3>
@@ -387,11 +395,12 @@
 					</div>
 				</div>
 			</form>
-			<img
+			<!-- <img
 				class="formSection__form-block-decor"
 				src="img/bg-decor-right.png"
 				alt="bg-decor"
-			/>
+			/> -->
+			<div class="formSection__form-block-decor"></div>
 		</div>
 	</div>
 </section>
@@ -401,7 +410,7 @@
 			<div class="footer__news-container">
 				<div class="footer__news-header">
 					<img
-						src="img/logo-news.png"
+						src="img/logo-news.svg"
 						class="foooter__news-header-logo"
 						alt="logo news"
 					/>
@@ -473,6 +482,7 @@
 		</div>
 		<img
 			src="img/logo-footer.png"
+			srcset="img/logo-footer2x.png 2x"
 			alt="logo footer"
 			class="footer__wrapper-logo"
 		/>

@@ -15,9 +15,6 @@
 		@media (max-width: $mobileXL) {
 			padding: 62px 52px 48px;
 		}
-		// @media (max-width: $mobileM) {
-		// 	padding: 78px 52px 48px;
-		// }
 	}
 
 	&__title-block {
@@ -61,13 +58,11 @@
 		grid-template-columns: 271px 241px 1fr;
 		gap: 40px 100px;
 		@media (max-width: $desktop) {
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: 1fr 1fr 1fr;
 			gap: 30px 60px;
 		}
 		@media (max-width: $laptop) {
-			grid-template-columns: repeat(2, 1fr);
-			// justify-self: center;
-			// gap: 0 300px;
+			grid-template-columns: 1fr 1fr;
 		}
 		@media (max-width: $tabletXS) {
 			grid-template-columns: 1fr;
@@ -76,9 +71,6 @@
 
 		.descriptionsSection__grid-item {
 			display: grid;
-			// @media (max-width: $laptop) {
-			// 	max-width: 300px;
-			// }
 
 			grid-template-rows: auto auto 1fr;
 			&:nth-child(2) {

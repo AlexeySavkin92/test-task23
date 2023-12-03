@@ -63,6 +63,7 @@
 			letter-spacing: -0.02em;
 			@media (max-width: $mobileM) {
 				margin-top: 16px;
+				line-height: $text-lh-md;
 			}
 		}
 
@@ -101,7 +102,7 @@
 			height: 306.6px;
 		}
 		@media (max-width: $laptop) {
-			margin-top: 28px;
+			margin-top: 31px;
 		}
 		@media (max-width: $tablet) {
 			max-width: 400px;
@@ -139,7 +140,7 @@
 
 		.videoSection__iframe {
 			filter: blur(2px) brightness(0.5);
-
+			border: none;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -197,11 +198,24 @@
 	}
 
 	.video-popup__iframe {
+		border: none;
 		width: 800px;
 		height: 450px;
 		@media (max-width: $laptop) {
 			width: 600px;
 			height: 337.5px;
+		}
+		@media (max-width: $tablet) {
+			width: 500px;
+			height: 281.3px;
+		}
+		@media (max-width: $tabletXS) {
+			width: 400px;
+			height: 225px;
+		}
+		@media (max-width: $mobileXL) {
+			width: 300px;
+			height: 168.75px;
 		}
 	}
 }

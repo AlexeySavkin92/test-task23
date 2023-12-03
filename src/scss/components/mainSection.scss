@@ -1,6 +1,6 @@
 .main {
 	margin: 0 auto;
-	min-height: 789px;
+	//min-height: 789px;
 
 	&__section {
 		padding: 0 50px;
@@ -26,21 +26,20 @@
 		}
 		@media (max-width: $tablet) {
 			padding-top: 100px;
-			height: clamp(487px, calc(100vh - 100px), 440px);
+			height: clamp(500px, calc(100vh - 100px), 560px);
 		}
 		@media (max-width: $tabletXS) {
-			min-height: 600px;
-			height: clamp(487px, calc(100vh - 125px), 440px);
+			//min-height: 600px;
+			height: clamp(575px, calc(100vh - 125px), 640px);
 			padding-top: 125px;
 		}
 
 		@media (max-width: $mobileXL) {
-			padding: 100px 28px 0;
-			height: clamp(681px, calc(100vh - 100px), 540px);
+			padding: 82.39px 28px 0;
+			height: clamp(600px, calc(100vh - 82.39px), 700px);
 		}
 		@media (max-width: $mobileM) {
-			padding-top: 82.39px;
-			//height: clamp(733px, calc(100vh - 82.39px), 540px);
+			height: clamp(670px, 100vh - 82.39px, 750px);
 		}
 
 		&-top {
@@ -56,19 +55,24 @@
 					padding-bottom: 10px;
 					@media (max-width: $tablet) {
 						.swiper-slide:nth-child(2) {
-							display: none;
+							//display: none;
 						}
 						.swiper-slide:nth-child(3) {
-							display: none;
+							//display: none;
 						}
 					}
 
 					@media (max-width: $tabletXS) {
-						height: 410px;
+						height: 420px;
 						//margin-top: 55px;
 					}
+					@media (max-width: $mobileXL) {
+						.swiper-slide:not(:first-child) {
+							margin-top: 0;
+						}
+					}
 					@media (max-width: $mobileM) {
-						height: 430px;
+						//height: 400px;
 					}
 
 					.swiper-slide {
@@ -91,6 +95,7 @@
 						}
 						@media (max-width: $mobileXL) {
 							margin-top: 55px;
+
 							//hyphens: auto;
 							//max-width: 291px;
 						}
@@ -219,8 +224,12 @@
 			position: absolute;
 			bottom: 0;
 			@media (max-width: $desktop) {
+				//margin-right: 25px;
+			}
+			@media (max-width: $laptop) {
 				margin-right: 25px;
 			}
+
 			@media (max-width: $mobileXL) {
 				margin-right: 0;
 			}
@@ -238,6 +247,7 @@
 					}
 				}
 				.main__section-scroll-image {
+					user-select: none;
 					cursor: pointer;
 					padding-top: 19px;
 					padding-bottom: 50px;
