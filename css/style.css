@@ -1105,13 +1105,8 @@ template {
   -webkit-transform-origin: 0 0;
       -ms-transform-origin: 0 0;
           transform-origin: 0 0;
-  opacity: 0.33;
-  background: linear-gradient(12deg, #f101bf 0%, #0066ff 100%);
-  -webkit-box-shadow: 250px 250px 250px;
-          box-shadow: 250px 250px 250px;
   border-radius: 373.43px;
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  background-color: yellow;
 }
 
 .formSection__form-block {
