@@ -786,7 +786,7 @@ template {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: -0.02em;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .descriptionsSection {
@@ -983,6 +983,7 @@ template {
 .videoSection__video-block .videoSection__iframe {
   -webkit-filter: blur(2px) brightness(0.5);
           filter: blur(2px) brightness(0.5);
+  border: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -1050,6 +1051,7 @@ template {
 }
 
 .videoSection .video-popup__iframe {
+  border: none;
   width: 800px;
   height: 450px;
 }
@@ -1087,7 +1089,7 @@ template {
   font-weight: 700;
   line-height: 55px;
   z-index: 1;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .formSection__left-block-decor {
@@ -1424,7 +1426,7 @@ template {
   margin-top: 8px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .footer__columns .footer__navigation li:hover,
@@ -1447,7 +1449,7 @@ template {
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .footer__columns .footer__navigation-info a,
@@ -1545,7 +1547,7 @@ template {
 
 @media (min-width: 375px) {
   .footer__copyright {
-    text-wrap: nowrap;
+    white-space: nowrap;
   }
 }
 
@@ -1710,7 +1712,7 @@ template {
 
   .statisticsSection__description {
     margin-top: 0;
-    text-wrap: wrap;
+    white-space: wrap;
   }
 
   .descriptionsSection__grid-container {
@@ -2065,7 +2067,7 @@ template {
   .footer__columns .footer__links li,
   .footer__columns .footer__contact-us li {
     margin-top: 6px;
-    text-wrap: wrap;
+    white-space: wrap;
     line-height: 18px;
   }
 
