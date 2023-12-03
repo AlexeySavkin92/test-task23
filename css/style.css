@@ -1616,8 +1616,8 @@ template {
   }
 
   .descriptionsSection__grid-container {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px 60px;
   }
 
@@ -1712,12 +1712,12 @@ template {
 
   .statisticsSection__description {
     margin-top: 0;
-    white-space: wrap;
+    white-space: normal;
   }
 
   .descriptionsSection__grid-container {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .videoSection__video-block {
@@ -2067,7 +2067,7 @@ template {
   .footer__columns .footer__links li,
   .footer__columns .footer__contact-us li {
     margin-top: 6px;
-    white-space: wrap;
+    white-space: normal;
     line-height: 18px;
   }
 
