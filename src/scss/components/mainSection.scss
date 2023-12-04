@@ -54,6 +54,10 @@
 					height: 320px;
 					padding-bottom: 10px;
 					@media (max-width: $tablet) {
+						display: flex;
+						width: max-content;
+						gap: 3px;
+
 						.swiper-slide:nth-child(2) {
 							//display: none;
 						}
@@ -67,9 +71,11 @@
 						//margin-top: 55px;
 					}
 					@media (max-width: $mobileXL) {
-						.swiper-slide:not(:first-child) {
-							margin-top: 0;
-						}
+						height: 480px;
+						//margin-top: 0;
+						// .swiper-slide:not(:first-child) {
+						// 	margin-top: 0;
+						// }
 					}
 					@media (max-width: $mobileM) {
 						//height: 400px;
@@ -95,7 +101,7 @@
 						}
 						@media (max-width: $mobileXL) {
 							margin-top: 55px;
-
+							//padding-right: 10px;
 							//hyphens: auto;
 							//max-width: 291px;
 						}

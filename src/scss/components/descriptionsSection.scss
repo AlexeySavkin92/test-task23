@@ -1,6 +1,8 @@
 .descriptionsSection {
 	background-color: $bg-description;
-
+	& figure {
+		margin: 0;
+	}
 	&__wrapper {
 		max-width: 1008px;
 		font-family: ProximaNova;
@@ -56,10 +58,12 @@
 	&__grid-container {
 		display: grid;
 		grid-template-columns: 271px 241px 1fr;
-		gap: 40px 100px;
+		gap: 50px 100px;
+		@media (max-width: $desktopS) {
+			gap: 30px 60px;
+		}
 		@media (max-width: $desktop) {
 			grid-template-columns: 1fr 1fr 1fr;
-			gap: 30px 60px;
 		}
 		@media (max-width: $laptop) {
 			grid-template-columns: 1fr 1fr;
@@ -91,6 +95,10 @@
 				}
 			}
 			&:nth-child(5) {
+				margin-top: 10px;
+				@media (max-width: $mobileM) {
+					margin-top: 0;
+				}
 				img {
 					position: relative;
 					left: 10px;
@@ -102,6 +110,7 @@
 			&:nth-child(4) {
 				img {
 					position: relative;
+
 					right: 13px;
 					@media (max-width: $mobileM) {
 						width: 100px;
@@ -111,6 +120,10 @@
 			}
 
 			&:nth-child(6) {
+				margin-top: 30px;
+				@media (max-width: $mobileM) {
+					margin-top: 0;
+				}
 				img {
 					position: relative;
 					right: 5px;

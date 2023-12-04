@@ -30,7 +30,6 @@ export function toglePopup() {
 		videoPopup.style.display = "block";
 		iframePopup.src =
 			"https://www.youtube.com/embed/__-vp0g_BhA?si=wr9g0o6PIxE_bUTf&amp;controls=0&autoplay=1";
-		iframePopup.play();
 	});
 
 	videoPopup.addEventListener("click", function () {
