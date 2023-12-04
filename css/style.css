@@ -1106,7 +1106,7 @@ template {
       -ms-transform-origin: 0 0;
           transform-origin: 0 0;
   opacity: 0.33;
-  background: linear-gradient(12deg, #f101bf 2.82%, #06f 97.06%);
+  background: linear-gradient(12deg, rgb(240, 0, 188) 2.82%, rgb(0, 102, 255) 97.06%);
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-shadow: 250px 250px 250px;
