@@ -16,7 +16,6 @@
 		}
 		@media (max-width: $tablet) {
 			flex-direction: column;
-			//	align-items: flex-start;
 		}
 		@media (max-width: $mobileXL) {
 			padding: 100px 28px 97px;
@@ -122,7 +121,10 @@
 			transform: translate(-50%, -50%);
 			z-index: 1;
 			cursor: pointer;
-			& img {
+			svg {
+				width: 77px;
+				height: 77px;
+
 				@media (max-width: $tablet) {
 					width: 60px;
 					height: 60px;
@@ -150,7 +152,6 @@
 		}
 		&-button {
 			display: none;
-
 			margin-top: 30px;
 			color: $primary;
 			font-size: $text-sm;

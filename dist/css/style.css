@@ -473,10 +473,17 @@ template {
 .header__burger-image {
   display: none;
   cursor: pointer;
+  width: 32px;
+  height: 32px;
+  fill: black;
+  background: url("../img/icons/icons.svg#burger") no-repeat;
 }
 @media (max-width: 768px) {
   .header__burger-image {
     display: block;
+  }
+  .header__burger-image:hover {
+    background: url("../img/icons/icons.svg#burger-active") no-repeat;
   }
 }
 
@@ -517,7 +524,7 @@ template {
 @media (max-width: 768px) {
   .main__section {
     padding-top: 100px;
-    height: clamp(500px, 100vh - 100px, 560px);
+    height: clamp(500px, 100vh - 100px, 530px);
   }
 }
 @media (max-width: 568px) {
@@ -529,13 +536,13 @@ template {
 @media (max-width: 475px) {
   .main__section {
     padding: 82.39px 28px 0;
-    height: clamp(560px, 100dvh - 82.39px, 700px);
+    height: clamp(600px, 100svh - 82.39px, 670px);
   }
 }
 @media (max-width: 375px) {
   .main__section {
     min-height: 660px;
-    height: clamp(660px, 100dvh - 82.39px, 750px);
+    height: clamp(660px, 100svh - 82.39px, 750px);
   }
 }
 .main__section-top {
@@ -769,6 +776,11 @@ template {
   padding-top: 19px;
   padding-bottom: 50px;
   width: 62px;
+  height: 71px;
+  transition: 0.2s;
+}
+.main__section-bottom-container .main__section-scroll-image:hover {
+  filter: brightness(0.85);
 }
 
 .statisticsSection__container {
@@ -925,6 +937,8 @@ template {
   }
 }
 .descriptionsSection__title-block .descriptionsSection__image-decor {
+  width: 46px;
+  height: 46px;
   position: absolute;
   top: -25px;
   right: -10px;
@@ -1205,20 +1219,24 @@ template {
   z-index: 1;
   cursor: pointer;
 }
+.videoSection__video-block .videoSection__custom-button svg {
+  width: 77px;
+  height: 77px;
+}
 @media (max-width: 768px) {
-  .videoSection__video-block .videoSection__custom-button img {
+  .videoSection__video-block .videoSection__custom-button svg {
     width: 60px;
     height: 60px;
   }
 }
 @media (max-width: 475px) {
-  .videoSection__video-block .videoSection__custom-button img {
+  .videoSection__video-block .videoSection__custom-button svg {
     width: 50px;
     height: 50px;
   }
 }
 @media (max-width: 375px) {
-  .videoSection__video-block .videoSection__custom-button img {
+  .videoSection__video-block .videoSection__custom-button svg {
     width: 34px;
     height: 34px;
   }

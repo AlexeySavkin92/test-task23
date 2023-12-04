@@ -27,7 +27,7 @@
 		}
 		@media (max-width: $tablet) {
 			padding-top: 100px;
-			height: clamp(500px, calc(100vh - 100px), 560px);
+			height: clamp(500px, calc(100vh - 100px), 530px);
 		}
 		@media (max-width: $tabletXS) {
 			height: clamp(575px, calc(100vh - 125px), 640px);
@@ -36,11 +36,11 @@
 
 		@media (max-width: $mobileXL) {
 			padding: 82.39px 28px 0;
-			height: clamp(560px, calc(100dvh - 82.39px), 700px);
+			height: clamp(600px, calc(100svh - 82.39px), 670px);
 		}
 		@media (max-width: $mobileM) {
 			min-height: 660px;
-			height: clamp(660px, calc(100dvh - 82.39px), 750px);
+			height: clamp(660px, calc(100svh - 82.39px), 750px);
 		}
 
 		&-top {
@@ -239,6 +239,11 @@
 					padding-top: 19px;
 					padding-bottom: 50px;
 					width: 62px;
+					height: 71px;
+					transition: 0.2s;
+					&:hover {
+						filter: brightness(0.85);
+					}
 				}
 			}
 		}

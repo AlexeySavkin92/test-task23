@@ -40,11 +40,7 @@
 					<li><a href="#"></a>CONTACT US</li>
 				</ul>
 			</nav>
-			<img
-				class="header__burger-image"
-				src="img/burger.svg"
-				alt="burger menu"
-			/>
+			<svg class="header__burger-image"></svg>
 			<nav class="header__menu-burger">
 				<div class="header__menu-burger-close">+</div>
 				<ul class="header__menu-burger-list">
@@ -136,12 +132,9 @@
 		<div class="main__section-bottom">
 			<div class="main__section-bottom-container">
 				<h3 class="main__section-bottom-title">FIND OUT MORE</h3>
-				<img
-					src="img/scroll.svg"
-					alt="scroll image"
-					id="scroll-image"
-					class="main__section-scroll-image"
-				/>
+				<svg id="scroll-image" class="main__section-scroll-image">
+					<use xlink:href="img/icons/icons.svg#scroll"></use>
+				</svg>
 			</div>
 		</div>
 	</div>
@@ -174,11 +167,9 @@
 	<div class="descriptionsSection__wrapper">
 		<div class="descriptionsSection__title-block">
 			<h2 class="descriptionsSection__title">What We Do</h2>
-			<img
-				src="img/decor.svg"
-				class="descriptionsSection__image-decor"
-				alt="decor title"
-			/>
+			<svg class="descriptionsSection__image-decor">
+				<use xlink:href="img/icons/icons.svg#decor"></use>
+			</svg>
 		</div>
 		<div class="descriptionsSection__grid-container">
 			<figure class="descriptionsSection__grid-item">
@@ -311,7 +302,9 @@
 		</div>
 		<div class="videoSection__video-block">
 			<div class="videoSection__custom-button">
-				<img src="img/play.svg" alt="Play Video" />
+				<svg class="videoSection__custom-button-icon">
+					<use xlink:href="img/icons/icons.svg#play"></use>
+				</svg>
 			</div>
 			<iframe
 				class="videoSection__iframe"

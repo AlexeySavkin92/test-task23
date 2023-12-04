@@ -135,9 +135,15 @@
 	&__burger-image {
 		display: none;
 		cursor: pointer;
-
+		width: 32px;
+		height: 32px;
+		fill: black;
+		background: url("@img/icons/icons.svg#burger") no-repeat;
 		@media (max-width: $tablet) {
 			display: block;
+			&:hover {
+				background: url("@img/icons/icons.svg#burger-active") no-repeat;
+			}
 		}
 	}
 }

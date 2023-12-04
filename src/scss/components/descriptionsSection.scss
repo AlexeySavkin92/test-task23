@@ -28,11 +28,6 @@
 			margin-bottom: 40px;
 			padding-right: 42px;
 		}
-		// @media (max-width: $mobileM) {
-		// 	padding-right: 0;
-		// 	text-align: center;
-		// 	margin-bottom: 26px;
-		// }
 
 		& .descriptionsSection__title {
 			line-height: $heading-lh-xl;
@@ -47,6 +42,8 @@
 		}
 
 		& .descriptionsSection__image-decor {
+			width: 46px;
+			height: 46px;
 			position: absolute;
 			top: -25px;
 			right: -10px;
@@ -110,7 +107,6 @@
 			&:nth-child(4) {
 				img {
 					position: relative;
-
 					right: 13px;
 					@media (max-width: $mobileM) {
 						width: 100px;

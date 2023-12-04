@@ -13,7 +13,6 @@ export const scss = () => {
 		.src(app.path.src.scss, { sourcemaps: app.isDev })
 		.pipe(
 			sass({
-				//includePaths: ["./node_modules/"],
 				outputStyle: "expanded",
 			})
 		)
