@@ -1768,11 +1768,6 @@ template {
     height: 337.5px;
   }
 
-  .formSection__wrapper {
-    position: relative;
-    overflow: hidden;
-  }
-
   .footer__wrapper {
     -ms-flex-pack: distribute;
         justify-content: space-around;
