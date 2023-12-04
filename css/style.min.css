@@ -1351,11 +1351,12 @@ template {
   transform: rotate(-122.79deg);
   transform-origin: 0 0;
   opacity: 0.33;
-  background: linear-gradient(12deg, #f101bf 0%, #0066ff 100%);
+  background: linear-gradient(12deg, #f101bf 2.82%, #06f 97.06%);
+  flex-shrink: 0;
   box-shadow: 250px 250px 250px;
   border-radius: 373.43px;
   border: 0px solid #ffffff;
-  filter: blur(100px);
+  filter: blur(125px);
 }
 @media (max-width: 768px) {
   .formSection__left-block-decor {
