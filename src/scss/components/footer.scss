@@ -224,7 +224,7 @@
 					margin-top: 8px;
 				}
 			}
-			h4 {
+			& h4 {
 				color: $accent;
 				font-size: $text-sm;
 				font-weight: $bold;
@@ -235,6 +235,9 @@
 				background-repeat: no-repeat;
 				background-size: contain;
 				padding-left: 28px;
+			}
+			&:last-child h4 {
+				margin-left: 25px;
 			}
 		}
 	}

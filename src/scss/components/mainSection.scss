@@ -1,13 +1,15 @@
 .main {
 	margin: 0 auto;
-	//min-height: 789px;
 
 	&__section {
 		padding: 0 50px;
 		position: relative;
 		height: clamp(487px, calc(100vh - 224px), 640px);
 		padding-top: 224px;
-		background-image: url("@img/Bg-header.svg");
+		background-image: url("@img/bg-header.png");
+		@media (min-resolution: 2dppx) {
+			background-image: url("@img/bg-header2x.png");
+		}
 		background-size: cover;
 		background-position: bottom;
 		color: $primary;
@@ -19,7 +21,6 @@
 		@media (max-width: $desktop) {
 			padding-top: 150px;
 			height: clamp(487px, calc(100vh - 150px), 540px);
-			//width: 100%;
 		}
 		@media (max-width: $laptop) {
 			padding-right: 25px;
@@ -29,17 +30,17 @@
 			height: clamp(500px, calc(100vh - 100px), 560px);
 		}
 		@media (max-width: $tabletXS) {
-			//min-height: 600px;
 			height: clamp(575px, calc(100vh - 125px), 640px);
 			padding-top: 125px;
 		}
 
 		@media (max-width: $mobileXL) {
 			padding: 82.39px 28px 0;
-			height: clamp(600px, calc(100vh - 82.39px), 700px);
+			height: clamp(560px, calc(100dvh - 82.39px), 700px);
 		}
 		@media (max-width: $mobileM) {
-			height: clamp(670px, 100vh - 82.39px, 750px);
+			min-height: 660px;
+			height: clamp(660px, calc(100dvh - 82.39px), 750px);
 		}
 
 		&-top {
@@ -57,28 +58,13 @@
 						display: flex;
 						width: max-content;
 						gap: 3px;
-
-						.swiper-slide:nth-child(2) {
-							//display: none;
-						}
-						.swiper-slide:nth-child(3) {
-							//display: none;
-						}
 					}
 
 					@media (max-width: $tabletXS) {
 						height: 420px;
-						//margin-top: 55px;
 					}
 					@media (max-width: $mobileXL) {
 						height: 480px;
-						//margin-top: 0;
-						// .swiper-slide:not(:first-child) {
-						// 	margin-top: 0;
-						// }
-					}
-					@media (max-width: $mobileM) {
-						//height: 400px;
 					}
 
 					.swiper-slide {
@@ -101,9 +87,6 @@
 						}
 						@media (max-width: $mobileXL) {
 							margin-top: 55px;
-							//padding-right: 10px;
-							//hyphens: auto;
-							//max-width: 291px;
 						}
 						@media (max-width: $mobileM) {
 							gap: 56px;
@@ -140,7 +123,6 @@
 								}
 								@media (max-width: $mobileM) {
 									margin-top: 16px;
-									//hyphens: manual;
 								}
 							}
 							& .main__section-button {
@@ -230,7 +212,6 @@
 			position: absolute;
 			bottom: 0;
 			@media (max-width: $desktop) {
-				//margin-right: 25px;
 			}
 			@media (max-width: $laptop) {
 				margin-right: 25px;
