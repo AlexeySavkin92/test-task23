@@ -6,9 +6,10 @@
 	"type": "module",
 	"scripts": {
 		"dev": "gulp",
-		"build": "gulp build --build && gulp deploy",
+		"build": "gulp build --build",
 		"zip": "gulp deployZIP --build",
-		"svgSprive": "gulp svgSprive"
+		"svgSprive": "gulp svgSprive",
+		"ghPages": "gulp deploy"
 	},
 	"author": "",
 	"license": "ISC",
@@ -39,8 +40,6 @@
 		"gulp-webp-html-nosvg": "^1.1.1",
 		"gulp-webpcss": "^1.1.1",
 		"gulp-zip": "^6.0.0",
-		"normalize-scss": "^8.0.0",
-		"normalize.css": "^8.0.1",
 		"sass": "^1.69.5",
 		"swiper": "^11.0.5",
 		"webp-converter": "^2.2.3",
