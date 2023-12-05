@@ -33,7 +33,6 @@ function watcher() {
 	gulp.watch(path.watch.js, js);
 	gulp.watch(path.watch.images, images);
 }
-export { svgSprive };
 
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 const mainTasks = gulp.series(
@@ -47,5 +46,6 @@ const deployZIP = gulp.series(reset, mainTasks, zip);
 export { dev };
 export { build };
 export { deployZIP };
+export { svgSprive };
 
 gulp.task("default", dev);
