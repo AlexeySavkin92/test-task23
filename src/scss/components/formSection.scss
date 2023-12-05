@@ -27,6 +27,9 @@
 		@media (max-width: $desktop) {
 			padding-right: 50px;
 		}
+		@media (max-width: 800px) {
+			padding-right: 30px;
+		}
 
 		&-title {
 			position: relative;

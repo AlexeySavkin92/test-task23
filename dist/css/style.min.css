@@ -475,7 +475,7 @@ template {
   cursor: pointer;
   width: 32px;
   height: 32px;
-  fill: black;
+  transition: 0.2s;
   background: url("../img/icons/icons.svg#burger") no-repeat;
 }
 @media (max-width: 768px) {
@@ -593,6 +593,11 @@ template {
     gap: 40px;
   }
 }
+@media (min-width: 768px) {
+  .main__section-top .swiper-container .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+  }
+}
 @media (max-width: 568px) {
   .main__section-top .swiper-container .swiper-wrapper .swiper-slide {
     flex-direction: column-reverse;
@@ -689,6 +694,10 @@ template {
     padding-top: 0;
   }
 }
+.main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-image-block .main__section-image {
+  width: 151px;
+  height: 124px;
+}
 @media (max-width: 1200px) {
   .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-image-block .main__section-image {
     padding: 0;
@@ -699,6 +708,7 @@ template {
 @media (max-width: 768px) {
   .main__section-top .swiper-container .swiper-wrapper .swiper-slide > .main__section-top-image-block .main__section-image {
     width: 100px;
+    height: 84px;
   }
 }
 @media (max-width: 568px) {
@@ -1366,6 +1376,11 @@ template {
     padding-right: 50px;
   }
 }
+@media (max-width: 800px) {
+  .formSection__left-block {
+    padding-right: 30px;
+  }
+}
 .formSection__left-block-title {
   position: relative;
   padding-top: 8px;
@@ -1832,10 +1847,12 @@ template {
   background-size: contain;
   padding-left: 28px;
 }
-.footer__columns .footer__navigation:last-child h4,
-.footer__columns .footer__links:last-child h4,
-.footer__columns .footer__contact-us:last-child h4 {
-  margin-left: 25px;
+@media (max-width: 1024px) {
+  .footer__columns .footer__navigation:last-child h4,
+  .footer__columns .footer__links:last-child h4,
+  .footer__columns .footer__contact-us:last-child h4 {
+    margin-left: 25px;
+  }
 }
 .footer__copyright {
   color: #ffffff;
@@ -1863,16 +1880,19 @@ template {
 }
 .footer__copyright-image {
   width: 9px;
-  padding-top: 1px;
-  background-image: url("../img/hex-active.svg");
+  height: 10px;
+  background-image: url("../img/icons/icons.svg#hex-active");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left;
+  background-position: left bottom;
   display: inline-block;
+  padding-right: 2px;
 }
 @media (max-width: 475px) {
   .footer__copyright-image {
     width: 6px;
+    height: 8px;
+    background-size: cover;
     padding-top: 0;
   }
 }

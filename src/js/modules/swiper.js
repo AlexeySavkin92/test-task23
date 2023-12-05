@@ -39,7 +39,7 @@ slideButtons.forEach((button, index) => {
 	});
 });
 
-function updateSwiperDirection() {
+export function updateSwiperDirection() {
 	if (window.innerWidth <= 768) {
 		swiper.allowTouchMove = true;
 		swiper.params.direction = "horizontal";
@@ -47,7 +47,6 @@ function updateSwiperDirection() {
 		swiper.allowTouchMove = false;
 		swiper.params.direction = "vertical";
 	}
-
 	swiper.update();
 }
 

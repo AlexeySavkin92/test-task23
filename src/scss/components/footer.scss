@@ -235,8 +235,10 @@
 				background-size: contain;
 				padding-left: 28px;
 			}
-			&:last-child h4 {
-				margin-left: 25px;
+			@media (max-width: $laptop) {
+				&:last-child h4 {
+					margin-left: 25px;
+				}
 			}
 		}
 	}
@@ -263,14 +265,17 @@
 
 		&-image {
 			width: 9px;
-			padding-top: 1px;
-			background-image: url("@img/hex-active.svg");
+			height: 10px;
+			background-image: url("@img/icons/icons.svg#hex-active");
 			background-repeat: no-repeat;
 			background-size: contain;
-			background-position: left;
+			background-position: left bottom;
 			display: inline-block;
+			padding-right: 2px;
 			@media (max-width: $mobileXL) {
 				width: 6px;
+				height: 8px;
+				background-size: cover;
 				padding-top: 0;
 			}
 		}

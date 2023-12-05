@@ -81,6 +81,11 @@
 							justify-content: left;
 							gap: 40px;
 						}
+
+						@media (min-width: $tablet) {
+							width: 100% !important;
+						}
+
 						@media (max-width: $tabletXS) {
 							flex-direction: column-reverse;
 							margin-top: 0;
@@ -159,6 +164,8 @@
 							}
 
 							& .main__section-image {
+								width: 151px;
+								height: 124px;
 								@media (max-width: $desktop) {
 									padding: 0;
 									margin-right: 30px;
@@ -166,6 +173,7 @@
 								}
 								@media (max-width: $tablet) {
 									width: 100px;
+									height: 84px;
 								}
 								@media (max-width: $tabletXS) {
 									margin-right: 0;

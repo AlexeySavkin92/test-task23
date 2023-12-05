@@ -75,11 +75,14 @@
 							<button class="main__section-button">GET STARTED</button>
 						</div>
 						<div class="main__section-top-image-block">
-							<img
+							<!-- <img
 								src="img/twitter.svg"
 								alt="twitter image"
 								class="main__section-image"
-							/>
+							/> -->
+							<svg class="main__section-image">
+								<use xlink:href="img/icons/icons.svg#twitter"></use>
+							</svg>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -94,11 +97,9 @@
 							<button class="main__section-button">GET STARTED</button>
 						</div>
 						<div class="main__section-top-image-block">
-							<img
-								src="img/twitter.svg"
-								alt="twitter image"
-								class="main__section-image"
-							/>
+							<svg class="main__section-image">
+								<use xlink:href="img/icons/icons.svg#twitter"></use>
+							</svg>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -113,16 +114,13 @@
 							<button class="main__section-button">GET STARTED</button>
 						</div>
 						<div class="main__section-top-image-block">
-							<img
-								src="img/twitter.svg"
-								alt="twitter image"
-								class="main__section-image"
-							/>
+							<svg class="main__section-image">
+								<use xlink:href="img/icons/icons.svg#twitter"></use>
+							</svg>
 						</div>
 					</div>
 				</div>
 			</div>
-
 			<div class="main__section-top-slider-buttons">
 				<button class="slide-button" data-slide="0"></button>
 				<button class="slide-button" data-slide="1"></button>
@@ -407,7 +405,9 @@
 		</div>
 	</div>
 </section>
- <footer class="footer">
+
+		</main>
+		<footer class="footer">
 	<div class="footer__wrapper">
 		<div class="footer__news">
 			<div class="footer__news-container">
@@ -491,12 +491,12 @@
 		/>
 	</div>
 	<div class="footer__copyright">
-		© 2017 SALT GROUP <span class="footer__copyright-image">&nbsp;</span> ALL
-		RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.
+		© 2017 SALT GROUP <svg class="footer__copyright-image"></svg> ALL RIGHTS
+		RESERVED. WEBSITE BY DORNE CREATIVE.
 	</div>
 </footer>
+<!-- &nbsp; -->
 
-		</main>
 		<script src="js/app.min.js"></script>
 	</body>
 </html>

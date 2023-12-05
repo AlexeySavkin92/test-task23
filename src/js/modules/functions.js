@@ -64,6 +64,7 @@ export function toggleBurger() {
 	menu.classList.toggle("show-menu");
 	overlay.classList.toggle("show-menu");
 }
+
 export function closeBurger() {
 	var menu = document.querySelector(".header__menu-burger");
 	var overlay = document.querySelector(".header__menu-burger-overlay");
