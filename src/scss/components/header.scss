@@ -91,6 +91,7 @@
 		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
+
 		&.show-menu {
 			right: 0%;
 		}
@@ -101,6 +102,8 @@
 			font-weight: $bold;
 			cursor: pointer;
 			transform: rotate(45deg);
+			-webkit-tap-highlight-color: transparent;
+
 			&:hover {
 				color: $accent;
 			}
@@ -139,6 +142,8 @@
 		height: 32px;
 		transition: 0.2s;
 		background: url("@img/icons/icons.svg#burger") no-repeat;
+		-webkit-tap-highlight-color: transparent;
+
 		@media (max-width: $tablet) {
 			display: block;
 			&:hover {

@@ -195,6 +195,7 @@
 					right: 0;
 				}
 				.slide-button {
+					-webkit-tap-highlight-color: transparent;
 					transition: 0.2s;
 					cursor: pointer;
 					margin-top: 12px;
@@ -242,10 +243,10 @@
 					}
 				}
 				.main__section-scroll-image {
-					user-select: none;
 					cursor: pointer;
-					padding-top: 19px;
-					padding-bottom: 50px;
+					margin-top: 19px;
+					margin-bottom: 50px;
+					-webkit-tap-highlight-color: transparent;
 					width: 62px;
 					height: 71px;
 					transition: 0.2s;
